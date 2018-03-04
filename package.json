@@ -5,5 +5,12 @@
   "main": "index.js",
   "repository": "https://github.com/Journerist/ygr-styleguide",
   "author": "Sebastian Barthel",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^9.1.1",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "scripts": {
+    "test": "stylelint src"
+  }
 }
