@@ -8,11 +8,17 @@ dependencies:
   pre:
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
 
+deployment:
+  npm:
+    tag: /v[0-9]+(\.[0-9]+)*/
+        commands:
+      - npm publish
+
 jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:8
+      - image: circleci/node:8ä
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -40,9 +46,3 @@ jobs:
 
       # run tests!
       - run: yarn test
-
-  deployment:
-    npm:
-      tag: /v[0-9]+(\.[0-9]+)*/
-          commands:
-        - npm publish
