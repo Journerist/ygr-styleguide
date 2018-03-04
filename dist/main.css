@@ -1,5 +1,8 @@
+.myElement {
+  z-index: 1;
+  margin: 0 0 0 0; }
+
 .red-rectangle {
   width: 200px;
   height: 200px;
-  background-color: red;
-}
+  background-color: blue; }

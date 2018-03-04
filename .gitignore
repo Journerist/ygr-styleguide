@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# not required webpack files
+dist/*.js
