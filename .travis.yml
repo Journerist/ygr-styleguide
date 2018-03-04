@@ -1,4 +1,11 @@
 language: node_js
 node_js:
-  - "8"
+- '8'
 cache: yarn
+deploy:
+  provider: npm
+  email: akrillo89@gmail.com
+  api_key:
+    secure: KbOBMagj4OYZO5big0zxE/1rfXn6elKewT1o8RPbI413R6UjvYh9oqPOGU1ukKjSBrFnU1H+TBdcsIuBj2lSKmXnGYzKcI72zx6gdz9dtQ5DM9y9rc7r7gX3CyLLIDZOpFzE53vrdtpDgViS+yDGPzLvbZsFTWSuIqinyvDfIap1HBNbnPmCcvA0nqYm4asPAr3MeL3ZpJkIIxxvO8z+JDX6bGvyyLPRMllD8hpaDi93ZwfndAXw70iyBKSR8Y+bVyT9Lcw4e00V/Yx1l+dMdIsO1sFewQF22EfVvSthJKe4K7wkUWv+CM9mvlCwC9lSEJxDGszcScWMoPpkmI21dls5gxUv+LcxnSwm5bWPPQMLv+daEV4I1xmyXJNeAFk8FL3gmAMgIcdhAigyl2y4crYpnRvsja2siG6OpmiiLBMlybg81wkKsSKQWjqCupUQEXmhkb8KhTMkYqls+x/6RBGSYI+9eh/4zG27ZCzNtyA2z1RYpvVgaWwGachxvVGuh6WuJqx1gNqOASL2ihtQBqVAvo+bOjXLwjmF7Y25xHuxiG9ESp4BDKJRT+AKpcO0sWDN+x3pwrU3OmJkA7u5MiOX7KN++pLHvTDH61Y3NE62aqtis/bExoWHaOSXMsp+w4vlycmyIoJaq3xZTF8LtbLIDGvC3RPSD7EM8Ms3yLo=
+  on:
+    tags: true
