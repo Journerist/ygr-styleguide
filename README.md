@@ -1,4 +1,6 @@
 # Your Game Race Styleguide
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Journerist/ygr-styleguide.svg)](https://greenkeeper.io/)
 This repository contains style definitions using SASS (SCSS syntaxx) that are used to build Your Game Race.
 
 This enables sites to:
