@@ -1,0 +1,39 @@
+.sg-leftNav {
+  background-color: white;
+  border-right: 1px solid #d1d1d1;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-bottom: 4.4rem;
+  position: fixed;
+  transition: transform 0.2s ease-out;
+  width: 17.72152%;
+}
+
+.sg-leftNav ul {
+  padding-left: 0;
+}
+
+.sg-leftNav li {
+  list-style-type: none;
+}
+
+.sg-leftNav a {
+  color: #646464;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  padding: 0.4rem 1.6rem;
+  text-decoration: none;
+}
+
+.sg-leftNav__Heading {
+  color: #757575;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-left: 1.5rem;
+  text-transform: uppercase;
+}
+
+.sg-leftNav__Heading--active {
+  box-shadow: inset 3px 0 0 0 #ff8e25;
+}
