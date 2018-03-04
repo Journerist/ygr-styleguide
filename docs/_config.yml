@@ -1,1 +1,2 @@
-theme: jekyll-theme-midnight
+name: Digital Styleguide for YourGameRace
+description: Based upon sass css files will be generated out of scss files. These can be used to build up a beatiful website.
