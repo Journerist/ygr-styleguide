@@ -10,12 +10,10 @@
   width: 17.72152%;
 }
 
-.sg-leftNav ul {
-  padding-left: 0;
-}
-
-.sg-leftNav li {
-  list-style-type: none;
+.sg-leftNav > ul > li {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 
 .sg-leftNav a {
