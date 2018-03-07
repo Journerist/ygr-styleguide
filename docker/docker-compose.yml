@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+  gh-pages:
+    image: starefossen/github-pages
+    ports:
+     - "4000:4000"
+    volumes:
+     - ../docs:/usr/src/app
+

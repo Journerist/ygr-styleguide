@@ -10,5 +10,8 @@ This enables sites to:
 - clean implementation of css based components
 - clear separation between styling and behavior
 
+# Local development using docker
+Check [use docker compose readme for local development](./docker/README.md)
+
 # Contribution
 Feel freet to contribute in any way. Right now there is no contribution guide. This will probably be added in the future. But for now just feel free and open issues for improvements, issues and for other reasons.
