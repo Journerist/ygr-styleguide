@@ -2,4 +2,5 @@
 @import "./styleguide/topNav.css";
 @import "./styleguide/leftNav.css";
 @import "./styleguide/content.css";
+@import "./styleguide/components/colorchip.css";
 

@@ -8,6 +8,7 @@
   position: fixed;
   transition: transform 0.2s ease-out;
   width: 17.72152%;
+  top: 4.4rem;
 }
 
 .sg-leftNav > ul > li {
