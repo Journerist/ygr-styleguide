@@ -11,7 +11,14 @@
   z-index: 90;
 }
 
+.sg-header__right {
+  position: absolute;
+  right: 1rem;
+  top: 0.6rem;
+}
+
 .sg-header img {
-  margin-left: -1rem;
-  width: 5rem;
+  height: 3rem;
+  margin: 0 0.5rem;
+  width: 3rem;
 }
