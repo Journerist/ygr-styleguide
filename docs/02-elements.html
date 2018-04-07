@@ -1,0 +1,36 @@
+--- 
+title: The digital Styleguide of Your Game Race - Elements 
+---
+
+<!doctype html>
+<html class="f-menu-active">
+
+<head>
+  <link rel="stylesheet" href="{{ '/assets/styles/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/styles/styleguide.css' | relative_url }}">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  {% include_relative partials/header.html %}
+  {% include_relative partials/leftNav.html %}
+
+  <div class="sg-content">
+    <div class="sg-container">
+      <h1 class="ygr-h1" id="01-typography">Elements</h1>
+      <div class="sg-card sg-item-group">
+        <h2 class="ygr-h2">Buttons</h2>
+        <h3 class="ygr-h3 sg-item-heading">Single-Action-Buttons</h3>
+        <p class="sg-p">Your Game Race uses Actions buttons in different colors. The purpose is give the user the possibility to <b>trigger a single action or go to a single purpose page</b>. In every case it's important that the route or action the users invokes is clear. This means no overview page or category pages.</p>
+        <p>
+            <input class="ygr-single-action-btn" type="button" value="Input button"/>
+            <button class="ygr-single-action-btn">Html button</button>
+            
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

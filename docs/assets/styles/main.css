@@ -1,3 +1,7 @@
+:root {
+  --dark-purple-color: #695af3;
+  --light-purple-color: #4e8bfe; }
+
 .ygr-h1 {
   color: #4a4a4a;
   font-size: 3.4rem;
@@ -25,3 +29,17 @@
   font-weight: 300;
   line-height: 2.4rem;
   margin-bottom: 2.4rem; }
+
+.ygr-single-action-btn {
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(white, white), linear-gradient(var(--dark-purple-color), var(--light-purple-color));
+  background-origin: border-box;
+  border: solid 1px transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 4.4rem;
+  padding: 0;
+  text-transform: uppercase;
+  width: 14rem; }
+  .ygr-single-action-btn:focus {
+    outline: 0; }
