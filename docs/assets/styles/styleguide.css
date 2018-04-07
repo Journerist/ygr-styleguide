@@ -1,6 +1,8 @@
 @import "./styleguide/layout.css";
-@import "./styleguide/topNav.css";
+@import "./styleguide/header.css";
 @import "./styleguide/leftNav.css";
 @import "./styleguide/content.css";
-@import "./styleguide/components/colorchip.css";
-
+@import "./styleguide/components/colorChip.css";
+@import "./styleguide/elements/card.css";
+@import "./styleguide/elements/item.css";
+@import "./styleguide/structure/container.css";

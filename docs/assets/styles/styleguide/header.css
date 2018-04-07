@@ -10,3 +10,8 @@
   top: 0;
   z-index: 90;
 }
+
+.sg-header img {
+  margin-left: -1rem;
+  width: 5rem;
+}

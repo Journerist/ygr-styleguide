@@ -7,7 +7,9 @@
   "author": "Sebastian Barthel",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "copy": "^0.3.1",
+    "cpx": "^1.5.0",
     "css-loader": "^0.28.10",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.7.2",
@@ -21,6 +23,7 @@
   "scripts": {
     "test": "stylelint src",
     "auto-fix": "stylelint src --fix && stylelint docs/assets/styles/*.scss --fix",
-    "build": "webpack && node ./node_modules/copy/bin/cli.js dist/*.css docs/assets/styles/"
+    "build": "webpack && node ./node_modules/copy/bin/cli.js dist/*.css docs/assets/styles/",
+    "watch": "concurrently --kill-others \"webpack --watch\" \"cpx dist/*.css docs/assets/styles/ --watch\""
   }
 }

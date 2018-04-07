@@ -1,0 +1,13 @@
+.sg-item-heading {
+  border-bottom: 1px solid #d1d1d1;
+  border-bottom-color: rgb(189, 189, 189);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.sg-item-group {
+  margin-bottom: 3rem;
+}

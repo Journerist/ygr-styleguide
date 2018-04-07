@@ -1,6 +1,7 @@
+--- 
+title: The digital Styleguide of Your Game Race - Core 
 ---
- title: The digital Styleguide of Your Game Race - Core 
----
+
 <!doctype html>
 <html class="f-menu-active">
 
@@ -12,26 +13,24 @@
 </head>
 
 <body>
-  <header class="sg-header"></header>
-
-  </header>
+  {% include_relative partials/header.html %}
   {% include_relative partials/leftNav.html %}
 
   <div class="sg-content">
-    <div class="ygr-container">
-      <h1 class="ygr-h1">Core</h1>
-      <div class="ygr-card ygr-item-group">
+    <div class="sg-container">
+      <h1 class="ygr-h1" id="01-typography">Core</h1>
+      <div class="sg-card sg-item-group">
         <h2 class="ygr-h2">Typography</h2>
-        <h3 class="ygr-h3 ygr-item-heading">Font</h3>
-        <p class="ygr-p">Your Game Race uses Ubuntu, a free open source font distributed trough Google Fonts. The simplest way to load the
+        <h3 class="ygr-h3 sg-item-heading">Font</h3>
+        <p class="sg-p">Your Game Race uses Ubuntu, a free open source font distributed trough Google Fonts. The simplest way to load the
           font in your project is to use the following code in your document:</p>
 
-        <h3 class="ygr-h3 ygr-item-heading">Font weights</h3>
-        <p class="ygr-p">The default font weight for text is 300. Most of the default text styles will use this. The weight 500 is used for
+        <h3 class="ygr-h3 sg-item-heading">Font weights</h3>
+        <p class="sg-p">The default font weight for text is 300. Most of the default text styles will use this. The weight 500 is used for
           emphasized text as well as table headers, form labels, and some other elements.</p>
 
-        <h3 class="ygr-h3 ygr-item-heading">Font sizes</h3>
-        <p class="ygr-p">
+        <h3 class="ygr-h3 sg-item-heading">Font sizes</h3>
+        <p class="sg-p">
           <h1 class="ygr-h1">Headline H1 is 34px and the line-height is 48px</h1>
           <h2 class="ygr-h2">Headline H2 is 27px and the line-height is 36px</h2>
           <h3 class="ygr-h3">Headline H3 is 22px and the line-height is 36px</h3>
@@ -39,55 +38,55 @@
         </p>
       </div>
 
-      <div class="ygr-card">
+      <div class="sg-card" id="02-colors">
         <h2 class="ygr-h2">Colors</h2>
-        <h3 class="ygr-h3 ygr-item-heading">Gray</h3>
+        <h3 class="ygr-h3 sg-item-heading">Gray</h3>
         <div class="sg-color-chips">
-            <div class="sg-color-chip" style="border-top-color: #FFFFFF; border-bottom-color: #FFFFFF;">
-                <div class="sg-color-chip__name">White</div>
-                <div class="sg-color-chip__color">#FFFFFF</div>
-                <div class="sg-color-chip__description">Headlines, Active navigation</div>
-              </div>
-            <div class="sg-color-chip" style="border-top-color: #656C7C; border-bottom-color: #656C7C;">
-              <div class="sg-color-chip__name">Dark-Grey</div>
-              <div class="sg-color-chip__color">#656C7C</div>
-              <div class="sg-color-chip__description">Sub-headlines, Inactive navigation</div>
-            </div>
+          <div class="sg-color-chip" style="border-top-color: #FFFFFF; border-bottom-color: #FFFFFF;">
+            <div class="sg-color-chip__name">White</div>
+            <div class="sg-color-chip__color">#FFFFFF</div>
+            <div class="sg-color-chip__description">Headlines, Active navigation</div>
+          </div>
+          <div class="sg-color-chip" style="border-top-color: #656C7C; border-bottom-color: #656C7C;">
+            <div class="sg-color-chip__name">Dark-Grey</div>
+            <div class="sg-color-chip__color">#656C7C</div>
+            <div class="sg-color-chip__description">Sub-headlines, Inactive navigation</div>
+          </div>
         </div>
 
-        <h3 class="ygr-h3 ygr-item-heading">Purple</h3>
+        <h3 class="sg-h3 sg-item-heading">Purple</h3>
         <div class="sg-color-chips">
-            <div class="sg-color-chip" style="border-top-color: #645EF6; border-bottom-color: #645EF6;">
-              <div class="sg-color-chip__name">Purple-light</div>
-              <div class="sg-color-chip__color">#645EF6</div>
-              <div class="sg-color-chip__description">Usually both are used in transitions in buttons.</div>
-            </div>
+          <div class="sg-color-chip" style="border-top-color: #645EF6; border-bottom-color: #645EF6;">
+            <div class="sg-color-chip__name">Purple-light</div>
+            <div class="sg-color-chip__color">#645EF6</div>
+            <div class="sg-color-chip__description">Usually both are used in transitions in buttons.</div>
+          </div>
 
-            <div class="sg-color-chip" style="border-top-color: #7B52F9; border-bottom-color: #7B52F9;">
-              <div class="sg-color-chip__name">Purple-regular</div>
-              <div class="sg-color-chip__color">#7B52F9</div>
-            </div>
+          <div class="sg-color-chip" style="border-top-color: #7B52F9; border-bottom-color: #7B52F9;">
+            <div class="sg-color-chip__name">Purple-regular</div>
+            <div class="sg-color-chip__color">#7B52F9</div>
+          </div>
         </div>
 
-        <h3 class="ygr-h3 ygr-item-heading">Orange</h3>
+        <h3 class="sg-h3 sg-item-heading">Orange</h3>
         <div class="sg-color-chips">
-            <div class="sg-color-chip" style="border-top-color: #DA6635; border-bottom-color: #DA6635;">
-              <div class="sg-color-chip__name">Orange-regular</div>
-              <div class="sg-color-chip__color">#DA6635</div>
-              <div class="sg-color-chip__description">Secondary color for important things like links, active navigation, icons</div>
-            </div>
+          <div class="sg-color-chip" style="border-top-color: #DA6635; border-bottom-color: #DA6635;">
+            <div class="sg-color-chip__name">Orange-regular</div>
+            <div class="sg-color-chip__color">#DA6635</div>
+            <div class="sg-color-chip__description">Secondary color for important things like links, active navigation, icons</div>
+          </div>
         </div>
 
-        <h3 class="ygr-h3 ygr-item-heading">Other action colors</h3>
+        <h3 class="sg-h3 sg-item-heading">Other action colors</h3>
         <div class="sg-color-chips">
-            <div class="sg-color-chip" style="border-top-color: #3ABE6B; border-bottom-color: #3ABE6B;">
-              <div class="sg-color-chip__name">Green-regular</div>
-              <div class="sg-color-chip__color">#3ABE6B</div>
-            </div>
-            <div class="sg-color-chip" style="border-top-color: #2B9BE7; border-bottom-color: #2B9BE7;">
-              <div class="sg-color-chip__name">Blue-regular</div>
-              <div class="sg-color-chip__color">#2B9BE7</div>
-            </div>
+          <div class="sg-color-chip" style="border-top-color: #3ABE6B; border-bottom-color: #3ABE6B;">
+            <div class="sg-color-chip__name">Green-regular</div>
+            <div class="sg-color-chip__color">#3ABE6B</div>
+          </div>
+          <div class="sg-color-chip" style="border-top-color: #2B9BE7; border-bottom-color: #2B9BE7;">
+            <div class="sg-color-chip__name">Blue-regular</div>
+            <div class="sg-color-chip__color">#2B9BE7</div>
+          </div>
         </div>
 
       </div>
@@ -95,5 +94,4 @@
   </div>
 
 </body>
-
 </html>

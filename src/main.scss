@@ -1,16 +1,1 @@
 @import "./general/font.scss";
-@import "./atoms/card.scss";
-@import "./atoms/item.scss";
-@import "./structure/container.scss";
-
-
-.myElement {
-  margin: 0 0 0 0;
-  z-index: 1;
-}
-
-.red-rectangle {
-  background-color: blue;
-  height: 200px;
-  width: 200px;
-}
