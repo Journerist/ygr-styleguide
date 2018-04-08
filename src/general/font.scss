@@ -1,7 +1,78 @@
+@font-face {
+  font-family: "FivoSans";
+  src: url("./font/FivoSans-Regular.eot");
+  src: url("./font/FivoSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./font/FivoSans-Regular.woff2") format("woff2"),
+    url("./font/FivoSans-Regular.woff") format("woff"),
+    url("./font/FivoSans-Regular.ttf") format("truetype"),
+    url("./font/FivoSans-Regular.svg#FivoSans") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FivoSans";
+  src: url("./font/FivoSans-Medium.eot");
+  src: url("./font/FivoSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./font/FivoSans-Medium.woff2") format("woff2"),
+    url("./font/FivoSans-Medium.woff") format("woff"),
+    url("./font/FivoSans-Medium.ttf") format("truetype"),
+    url("./font/FivoSans-Medium.svg#FivoSans") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FivoSans";
+  src: url("./font/FivoSans-Bold.eot");
+  src: url("./font/FivoSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./font/FivoSans-Bold.woff2") format("woff2"),
+    url("./font/FivoSans-Bold.woff") format("woff"),
+    url("./font/FivoSans-Bold.ttf") format("truetype"),
+    url("./font/FivoSans-Bold.svg#FivoSans") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FivoSans";
+  src: url("./font/FivoSans-Heavy.eot");
+  src: url("./font/FivoSans-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("./font/FivoSans-Heavy.woff2") format("woff2"),
+    url("./font/FivoSans-Heavy.woff") format("woff"),
+    url("./font/FivoSans-Heavy.ttf") format("truetype"),
+    url("./font/FivoSans-Heavy.svg#FivoSans") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+button,
+input {
+  background: #ededed;
+  color: #4a4a4a;
+  font-family: "FivoSans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  line-height: 2.4rem;
+  margin: 0;
+  position: relative;
+}
+
+.ygr-a {
+  color: var(--dark-purple-color);
+  text-decoration: none;
+}
+
 .ygr-h1 {
   color: #4a4a4a;
   font-size: 3.4rem;
-  font-weight: 300;
+  font-weight: var(--medium-font-weight);
   line-height: 4.8rem;
   margin-bottom: 2.4rem;
 }
@@ -9,7 +80,7 @@
 .ygr-h2 {
   color: #4a4a4a;
   font-size: 2.7rem;
-  font-weight: 300;
+  font-weight: var(--medium-font-weight);
   line-height: 3.6rem;
   margin-bottom: 2.4rem;
 }
@@ -17,7 +88,7 @@
 .ygr-h3 {
   color: #4a4a4a;
   font-size: 2.2rem;
-  font-weight: 300;
+  font-weight: var(--medium-font-weight);
   line-height: 3.6rem;
   margin-bottom: 2.4rem;
 }
@@ -25,7 +96,7 @@
 .ygr-h4 {
   color: #4a4a4a;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: var(--medium-font-weight);
   line-height: 2.4rem;
   margin-bottom: 2.4rem;
 }
