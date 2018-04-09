@@ -12,10 +12,13 @@
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: 1.2rem;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--regular-font-weight);
   line-height: 1.8rem;
   margin-bottom: 2em;
   padding: 0.5em;
 }
+
+.sg-color-chip__name {
+  font-weight: var(--bold-font-weight);
+} 

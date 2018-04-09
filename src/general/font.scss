@@ -53,15 +53,17 @@ html {
 body,
 button,
 input {
-  background: #ededed;
-  color: #4a4a4a;
   font-family: "FivoSans";
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: var(--regular-font-weight);
   line-height: 1;
   line-height: 2.4rem;
   margin: 0;
   position: relative;
+}
+
+b {
+  font-weight: var(--bold-font-weight);
 }
 
 .ygr-a {

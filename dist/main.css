@@ -4,9 +4,10 @@
   --light-purple-color: #4e8bfe; }
 
 :root {
-  --regular-font-weight: 400;
-  --medium-font-weight: 500;
-  --bold-font-weight: 700; }
+  --regular-font-weight: 300;
+  --medium-font-weight: 400;
+  --bold-font-weight: 600;
+  --heavy-font-weight: 700; }
 
 @font-face {
   font-family: "FivoSans";
@@ -42,15 +43,16 @@ html {
 body,
 button,
 input {
-  background: #ededed;
-  color: #4a4a4a;
   font-family: "FivoSans";
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: var(--regular-font-weight);
   line-height: 1;
   line-height: 2.4rem;
   margin: 0;
   position: relative; }
+
+b {
+  font-weight: var(--bold-font-weight); }
 
 .ygr-a {
   color: var(--dark-purple-color);
