@@ -23,8 +23,8 @@
     "webpack-cli": "^2.0.10"
   },
   "scripts": {
-    "test": "stylelint src",
-    "auto-fix": "stylelint src --fix && stylelint docs/assets/styles/*.scss --fix",
+    "test": "stylelint src/**/*.scss",
+    "auto-fix": "stylelint src/**/*.scss --fix && stylelint docs/assets/styles/**/*.scss --fix",
     "build": "webpack && node ./node_modules/copy/bin/cli.js dist/*.css docs/assets/styles/",
     "watch": "concurrently --kill-others \"webpack --watch\" \"cpx dist/*.css docs/assets/styles/ --watch\""
   }

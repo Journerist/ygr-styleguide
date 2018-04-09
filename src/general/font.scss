@@ -1,49 +1,53 @@
 @font-face {
   font-family: "FivoSans";
+  font-style: normal;
+  font-weight: 300;
   src: url("./font/FivoSans-Regular.eot");
-  src: url("./font/FivoSans-Regular.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("./font/FivoSans-Regular.eot?#iefix") format("embedded-opentype"),
     url("./font/FivoSans-Regular.woff2") format("woff2"),
     url("./font/FivoSans-Regular.woff") format("woff"),
     url("./font/FivoSans-Regular.ttf") format("truetype"),
     url("./font/FivoSans-Regular.svg#FivoSans") format("svg");
-  font-weight: 300;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "FivoSans";
+  font-style: normal;
+  font-weight: 400;
   src: url("./font/FivoSans-Medium.eot");
-  src: url("./font/FivoSans-Medium.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("./font/FivoSans-Medium.eot?#iefix") format("embedded-opentype"),
     url("./font/FivoSans-Medium.woff2") format("woff2"),
     url("./font/FivoSans-Medium.woff") format("woff"),
     url("./font/FivoSans-Medium.ttf") format("truetype"),
     url("./font/FivoSans-Medium.svg#FivoSans") format("svg");
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "FivoSans";
+  font-style: normal;
+  font-weight: 600;
   src: url("./font/FivoSans-Bold.eot");
-  src: url("./font/FivoSans-Bold.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("./font/FivoSans-Bold.eot?#iefix") format("embedded-opentype"),
     url("./font/FivoSans-Bold.woff2") format("woff2"),
     url("./font/FivoSans-Bold.woff") format("woff"),
     url("./font/FivoSans-Bold.ttf") format("truetype"),
     url("./font/FivoSans-Bold.svg#FivoSans") format("svg");
-  font-weight: 600;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "FivoSans";
+  font-style: normal;
+  font-weight: 700;
   src: url("./font/FivoSans-Heavy.eot");
-  src: url("./font/FivoSans-Heavy.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("./font/FivoSans-Heavy.eot?#iefix") format("embedded-opentype"),
     url("./font/FivoSans-Heavy.woff2") format("woff2"),
     url("./font/FivoSans-Heavy.woff") format("woff"),
     url("./font/FivoSans-Heavy.ttf") format("truetype"),
     url("./font/FivoSans-Heavy.svg#FivoSans") format("svg");
-  font-weight: 700;
-  font-style: normal;
 }
 
 html {
