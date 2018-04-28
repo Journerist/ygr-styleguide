@@ -4,13 +4,10 @@ title: The digital Styleguide of Your Game Race
 <!doctype html>
 <html class="f-menu-active">
 <head>
-    <link rel="stylesheet" href="{{ '/assets/styles/main.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/styles/styleguide.css' | relative_url }}">
-
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
+  {% include_relative partials/head.html %}
 </head>
 <body>
-  {% include_relative partials/header.html %}
+  {% include_relative partials/topBar.html %}
   {% include_relative partials/leftNav.html %}
   <div class="sg-content">
   </div>

@@ -1,3 +1,5 @@
+@import "../util/functions.scss";
+
 @font-face {
   font-family: "FivoSans";
   font-style: normal;
@@ -75,34 +77,44 @@ b {
   text-decoration: none;
 }
 
+$headline-h1-size: 54px;
+$headline-h1-line-height: $headline-h1-size;
+$headline-h2-size: $headline-h1-size * 0.75;
+$headline-h2-line-height: $headline-h2-size * 1.1111;
+$headline-h3-size: $headline-h1-size * 0.625;
+$headline-h3-line-height: $headline-h3-size * 1.2;
+$headline-h4-size: $headline-h1-size * 0.5;
+$headline-h4-line-height: $headline-h4-size * 1.25;
+$headline-font-weight: var(--medium-font-weight);
+
 .ygr-h1 {
   color: #4a4a4a;
-  font-size: 3.4rem;
-  font-weight: var(--medium-font-weight);
-  line-height: 4.8rem;
+  font-size: calculate-rem($headline-h1-size);
+  font-weight: $headline-font-weight;
+  line-height: calculate-rem($headline-h1-line-height);
   margin-bottom: 2.4rem;
 }
 
 .ygr-h2 {
   color: #4a4a4a;
-  font-size: 2.7rem;
-  font-weight: var(--medium-font-weight);
-  line-height: 3.6rem;
+  font-size: calculate-rem($headline-h2-size);
+  font-weight: $headline-font-weight;
+  line-height: calculate-rem($headline-h2-line-height);
   margin-bottom: 2.4rem;
 }
 
 .ygr-h3 {
   color: #4a4a4a;
-  font-size: 2.2rem;
-  font-weight: var(--medium-font-weight);
-  line-height: 3.6rem;
+  font-size: calculate-rem($headline-h3-size);
+  font-weight: $headline-font-weight;
+  line-height: calculate-rem($headline-h3-line-height);
   margin-bottom: 2.4rem;
 }
 
 .ygr-h4 {
   color: #4a4a4a;
-  font-size: 1.8rem;
-  font-weight: var(--medium-font-weight);
-  line-height: 2.4rem;
+  font-size: calculate-rem($headline-h4-size);
+  font-weight: $headline-font-weight;
+  line-height: calculate-rem($headline-h4-line-height);
   margin-bottom: 2.4rem;
 }
