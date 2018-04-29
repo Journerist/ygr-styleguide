@@ -1,25 +1,48 @@
+$button-font-color: var(--purple-color);
+$button-font-color-hover: var(--white-color);
+
 .ygr-single-action-btn {
-  background-clip: content-box, border-box;
-  background-image:
-    linear-gradient(white, white),
-    linear-gradient(
-      to right,
-      var(--dark-purple-color),
-      var(--light-purple-color)
-    );
-  background-origin: border-box;
-  border: solid 1px transparent;
-  border-radius: 3px;
-  color: var(--purple-color);
+  background-color: white;
+  border: solid 1px;
+  border-image: linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color) 100%) 1px;
+  border-radius: 4px;
+  color: $button-font-color;
   cursor: pointer;
   font-weight: var(--bold-font-weight);
   height: 4.4rem;
-  line-height: 4.6rem;
-  padding: 0;
-  text-transform: uppercase;
-  width: 14rem;
+  line-height: 4.5rem;
+  padding: 0 2.1rem;
 
   &:focus {
     outline: 0;
+  }
+
+  &:hover {
+    background: linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color) 100%);
+    color: $button-font-color-hover;
+
+    & svg {
+      & path {
+        fill: $button-font-color-hover;
+      }
+    }
+  }
+
+  &__icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    display: inline-block;
+    position: relative;
+  }
+
+  & svg {
+    height: 1.8rem;
+    position: absolute;
+    left: 0px;
+    top: 0.1rem;
+
+    & path {
+      fill: $button-font-color;
+    }
   }
 }
