@@ -21,20 +21,20 @@ $text-color: var(--white-color);
   &__content-lead,
   &__content,
   &__actions {
-    flex-grow: 1;
     align-self: center;
+    flex-grow: 1;
   }
 
   &__content-text {
     color: $text-color;
-    font-weight: var(--medium-font-weight);
     font-size: var(--important-font-size);
+    font-weight: var(--medium-font-weight);
   }
 
   &__content-subtext {
     color: $subtext-hint-color;
-    font-weight: var(--normal-font-weight);
     font-size: var(--hint-font-size);
+    font-weight: var(--normal-font-weight);
   }
 
   &__content-hint {
@@ -43,6 +43,7 @@ $text-color: var(--white-color);
 
   &__category-image {
     flex-grow: 0.3;
+
     & svg {
       height: 4rem;
       margin-top: 1rem;
