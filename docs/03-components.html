@@ -10,20 +10,204 @@ title: The digital Styleguide of Your Game Race - Components
 </head>
 
 <body>
-  {% include_relative partials/topBar.html %}
-  {% include_relative partials/leftNav.html %}
+  {% include_relative partials/topBar.html %} {% include_relative partials/leftNav.html %}
 
   <div class="sg-content">
     <div class="sg-container">
       <h1 class="ygr-h1" id="01-typography">Components</h1>
-      <p class="sg-p">Components are bigger moveable elements of the site. Usually, they are build upon different elements. They are created to fulfill a special requirement like tables that contain data. Modifier extend them to use them in different environment. On top of that there are rules to make them responsive.</p>
-      <div class="sg-card sg-item-group">
+      <p class="sg-p">Components are bigger moveable elements of the site. Usually, they are build upon different elements. They are created
+        to fulfill a special requirement like tables that contain data. Modifier extend them to use them in different environment.
+        On top of that there are rules to make them responsive.</p>
+      <div class="sg-card sg-item-group" style="background-color: #0D1533; color: white;">
         <h2 class="ygr-h2" id="01-tables">Tables</h2>
+        <h3 class="ygr-h3">Table elements</h3>
+        <p class="sg-p">
+          <code>.table__row</code> (required):
+          <p class="sg-p">Row sub-element that contains row elements. It's the vertical separation of the table and therefore the foundation
+            of the basic table structure.</p>
+        </p>
+        <p class="sg-p">
+          <code>.ygr-table__category-image</code> (optional):
+          <p class="sg-p">The first vertical column of the table can be an category column. It contains an image to categories its row.</p>
+        </p>
+        <p class="sg-p">
+          <code>.ygr-table__content-lead</code> (required):
+          <p class="sg-p">The content lead column will take all space that is available.</p>
+        </p>
+        <p class="sg-p">
+          <code>.ygr-table__content</code> (required):
+          <p class="sg-p">The content column will take a certain amount of space that is shared with other columns.</p>
+        </p>
+        <p class="sg-p">
+          <code>.ygr-table__actions</code> (optional):
+          <p class="sg-p">The action column is the last column and contains elements to trigger an action.</p>
+        </p>
+
+
         <h3 class="ygr-h3 sg-item-heading">Regular table</h3>
         <p class="sg-p">Your Game Race uses tables to display various kinds of information.</p>
+
+
+        <p class="sg-p">
+          table1
+        </p>
+        <p>
+            <div style="">
+                <div class="ygr-table">
+                  <div class="ygr-table__row">
+                    <div class="ygr-table__category-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366 443" version="1.1" xml:space="preserve" stroke-linejoin="round"><path d="M199 442.5c0 0-0.5-66.6-88.2-103.2 -54.2-22.6-55.2-97.8 7.3-130.8 0 0-19.4 34.3 34.6 77 76.4 60.5 48 149.7 46.4 157M125.6 205.5c0 0 30.3-9.1 57.7 29.8 0 0-8.9 18.6 15.8 53.1 17.2 24 19.8 42.7 11.1 76.6 0 0-2.5-49.3-50.1-84.1 -53.1-38.8-34.5-75.4-34.5-75.4M105.3 208.7c0 0 59.9-91.9 133.1-75.4 0 0 17.4 19.3 29.7 56.5 0 0-55.6-12.5-81.8 37.1 0 0-37.4-50.9-81-18.2M305.8 129.6c0 0 44.5 66.4 25.2 81.2 0 0 25.4 62.1 31.8 73.1 3.9 6.7 3.5 9.5-3.6 23.8 -1.9 3.7-1-25-9.3-19.6 -4 2.6-2.1 4.8-0.4 9.6 1.7 4.8 9.7 22-12.9 27.2 -21.2 4.8-15.3 4.4-18.7-0.4 -3.4-4.9-22.6-41.1-40.2-49.1 -17.7-8-26.5 11.5-26.3 15 0.2 3.5-19.8-37.4-32.2-31.6 -13.9 6.4-13.8 24.3-13.8 24.3 -4.9-5.2-39.4-56 25.6-82.6 24.1-9.9 53.5-1.3 53.5-1.3 0 0-1 10 7.4 16.3 15.1 11.3 12.8 15.2 12.8 15.2 0 0 14.9-24.4-16.7-42 0 0 20.9-25 17.8-58.9M258.4 285.6c0 0 11.6-13.6 26.7 1.9 12.5 12.8 28 39 28 39 0.2 1.9-12.5 1.7-22.8 8.2 -8.8 5.6-15.4 2.9-21.1 3 0 0 16.7-12.7 9-26.5 0 0-6.9-15.1-19.8-25.7M297.9 215c1.6 1 4.5 4 5.9 6 0 0 1.8-8.7-2.9-15.5 0 0-6-0.6-9.9 4.2 0 0 3.5 3.1 6.9 5.3M277.2 188.4c0 0-54.1-173.1-191-129 -15.6 5-27.1 12.7-35.5 22.2 -26.4 6.1-41.3-18.6-41.3-18.6 15.4-29.2 45.3-52.3 92.8-60.2 84-14 183.7 26 195.9 106 2.8 18.4 2 52.4-20.9 79.7M8 73.3c0 0 13 16.5 33.7 14.7 0 0-7.8 9.5-11.3 27.8 0 0-18 7.3-30.3-4.5 0 0-0.7-17 8-38M2.7 119.3c0 0 10.8 7.1 23.9 2.1 0 0-2 7.6-1.1 20.4 0 0-7.9 8-19.4 3.3 0 0-4.2-10.6-3.3-25.8M9.9 150.3c0 0 7.6 2.6 14.7-2.5 0 0 0.2 6.5 1.7 13.7 0 0-3.1 6.1-11 4.2 0 0-3.4-6.2-5.3-15.4M26.3 167.4c0 0-3 4-7.8 2.7 0 0 9.4 24.8 27.9 39.6 0 0-17.5-24.5-20.1-42.4M190.5 128.9c0 0-43.1-48.4-94.9-23.3 -6.2 3-15.1 10.3-15.1 10.3 -16.2 3.4-26.6-11.9-26.6-11.9 11.2-22.4 20.5-30 37.1-36.3 50.1-18.8 112.3 2.8 143.5 58.5 0 0-22.3-6.1-44 2.7M53.5 110.3c0 0 6.8 9.7 19.7 9.5 0 0-4.2 5-6.3 16.1 0 0-10.8 4.4-18.2-2.7 0 0-0.4-10.2 4.8-22.9M50.4 138c0 0 6.5 4.3 14.3 1.3 0 0-1.2 4.6-0.7 12.3 0 0-4.7 4.8-11.7 2 0 0-2.5-6.4-2-15.5M54.7 156.7c0 0 4.6 1.5 8.8-1.5 0 0 0.1 3.9 1 8.2 0 0-1.9 3.7-6.6 2.5 0 0-2.1-3.7-3.2-9.3M64.5 166.9c0 0-1.8 2.4-4.7 1.7 0 0 5.7 14.9 16.8 23.8 0 0-10.5-14.7-12.1-25.5"/></svg>
+                    </div>
+                    <div class="ygr-table__content-lead">
+                      <div class="ygr-table__content-subtext">Weekly Race</div>
+                      <div class="ygr-table__content-text">Core Race #21</div>
+                    </div>
+                    <div class="ygr-table__content">
+                      <div class="ygr-table__content-subtext">Rank</div>
+                      <div class="ygr-table__content-text">#5</div>
+                    </div>
+                    <div class="ygr-table__content">
+                      <div class="ygr-table__content-subtext">Score</div>
+                      <div class="ygr-table__content-text">213</div>
+                    </div>
+                    <div class="ygr-table__content">
+                      <div class="ygr-table__content-subtext">End</div>
+                      <div class="ygr-table__content-text">Mar 27, 2018</div>
+                    </div>
+                    <div class="ygr-table__actions">
+                      <button class="ygr-single-action-btn">See Details</button>
+                    </div>
+                  </div>
+                  <div class="ygr-table__row">
+                    <div class="ygr-table__category-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366 443" version="1.1" xml:space="preserve" stroke-linejoin="round"><path d="M199 442.5c0 0-0.5-66.6-88.2-103.2 -54.2-22.6-55.2-97.8 7.3-130.8 0 0-19.4 34.3 34.6 77 76.4 60.5 48 149.7 46.4 157M125.6 205.5c0 0 30.3-9.1 57.7 29.8 0 0-8.9 18.6 15.8 53.1 17.2 24 19.8 42.7 11.1 76.6 0 0-2.5-49.3-50.1-84.1 -53.1-38.8-34.5-75.4-34.5-75.4M105.3 208.7c0 0 59.9-91.9 133.1-75.4 0 0 17.4 19.3 29.7 56.5 0 0-55.6-12.5-81.8 37.1 0 0-37.4-50.9-81-18.2M305.8 129.6c0 0 44.5 66.4 25.2 81.2 0 0 25.4 62.1 31.8 73.1 3.9 6.7 3.5 9.5-3.6 23.8 -1.9 3.7-1-25-9.3-19.6 -4 2.6-2.1 4.8-0.4 9.6 1.7 4.8 9.7 22-12.9 27.2 -21.2 4.8-15.3 4.4-18.7-0.4 -3.4-4.9-22.6-41.1-40.2-49.1 -17.7-8-26.5 11.5-26.3 15 0.2 3.5-19.8-37.4-32.2-31.6 -13.9 6.4-13.8 24.3-13.8 24.3 -4.9-5.2-39.4-56 25.6-82.6 24.1-9.9 53.5-1.3 53.5-1.3 0 0-1 10 7.4 16.3 15.1 11.3 12.8 15.2 12.8 15.2 0 0 14.9-24.4-16.7-42 0 0 20.9-25 17.8-58.9M258.4 285.6c0 0 11.6-13.6 26.7 1.9 12.5 12.8 28 39 28 39 0.2 1.9-12.5 1.7-22.8 8.2 -8.8 5.6-15.4 2.9-21.1 3 0 0 16.7-12.7 9-26.5 0 0-6.9-15.1-19.8-25.7M297.9 215c1.6 1 4.5 4 5.9 6 0 0 1.8-8.7-2.9-15.5 0 0-6-0.6-9.9 4.2 0 0 3.5 3.1 6.9 5.3M277.2 188.4c0 0-54.1-173.1-191-129 -15.6 5-27.1 12.7-35.5 22.2 -26.4 6.1-41.3-18.6-41.3-18.6 15.4-29.2 45.3-52.3 92.8-60.2 84-14 183.7 26 195.9 106 2.8 18.4 2 52.4-20.9 79.7M8 73.3c0 0 13 16.5 33.7 14.7 0 0-7.8 9.5-11.3 27.8 0 0-18 7.3-30.3-4.5 0 0-0.7-17 8-38M2.7 119.3c0 0 10.8 7.1 23.9 2.1 0 0-2 7.6-1.1 20.4 0 0-7.9 8-19.4 3.3 0 0-4.2-10.6-3.3-25.8M9.9 150.3c0 0 7.6 2.6 14.7-2.5 0 0 0.2 6.5 1.7 13.7 0 0-3.1 6.1-11 4.2 0 0-3.4-6.2-5.3-15.4M26.3 167.4c0 0-3 4-7.8 2.7 0 0 9.4 24.8 27.9 39.6 0 0-17.5-24.5-20.1-42.4M190.5 128.9c0 0-43.1-48.4-94.9-23.3 -6.2 3-15.1 10.3-15.1 10.3 -16.2 3.4-26.6-11.9-26.6-11.9 11.2-22.4 20.5-30 37.1-36.3 50.1-18.8 112.3 2.8 143.5 58.5 0 0-22.3-6.1-44 2.7M53.5 110.3c0 0 6.8 9.7 19.7 9.5 0 0-4.2 5-6.3 16.1 0 0-10.8 4.4-18.2-2.7 0 0-0.4-10.2 4.8-22.9M50.4 138c0 0 6.5 4.3 14.3 1.3 0 0-1.2 4.6-0.7 12.3 0 0-4.7 4.8-11.7 2 0 0-2.5-6.4-2-15.5M54.7 156.7c0 0 4.6 1.5 8.8-1.5 0 0 0.1 3.9 1 8.2 0 0-1.9 3.7-6.6 2.5 0 0-2.1-3.7-3.2-9.3M64.5 166.9c0 0-1.8 2.4-4.7 1.7 0 0 5.7 14.9 16.8 23.8 0 0-10.5-14.7-12.1-25.5"/></svg>
+                    </div>
+                    <div class="ygr-table__content-lead">
+                      <div class="ygr-table__content-subtext">Weekly Race</div>
+                      <div class="ygr-table__content-text">Core Race #21</div>
+                    </div>
+                    <div class="ygr-table__content">
+                      <div class="ygr-table__content-subtext">Rank</div>
+                      <div class="ygr-table__content-text">#5</div>
+                    </div>
+                    <div class="ygr-table__content">
+                      <div class="ygr-table__content-subtext">Score</div>
+                      <div class="ygr-table__content-text">213</div>
+                    </div>
+                    <div class="ygr-table__content">
+                      <div class="ygr-table__content-subtext">End</div>
+                      <div class="ygr-table__content-text">Mar 27, 2018</div>
+                    </div>
+                    <div class="ygr-table__actions">
+                      <button class="ygr-single-action-btn">See Details</button>
+                    </div>
+                  </div>
+                  <div class="ygr-table__row">
+                    <div class="ygr-table__category-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366 443" version="1.1" xml:space="preserve" stroke-linejoin="round"><path d="M199 442.5c0 0-0.5-66.6-88.2-103.2 -54.2-22.6-55.2-97.8 7.3-130.8 0 0-19.4 34.3 34.6 77 76.4 60.5 48 149.7 46.4 157M125.6 205.5c0 0 30.3-9.1 57.7 29.8 0 0-8.9 18.6 15.8 53.1 17.2 24 19.8 42.7 11.1 76.6 0 0-2.5-49.3-50.1-84.1 -53.1-38.8-34.5-75.4-34.5-75.4M105.3 208.7c0 0 59.9-91.9 133.1-75.4 0 0 17.4 19.3 29.7 56.5 0 0-55.6-12.5-81.8 37.1 0 0-37.4-50.9-81-18.2M305.8 129.6c0 0 44.5 66.4 25.2 81.2 0 0 25.4 62.1 31.8 73.1 3.9 6.7 3.5 9.5-3.6 23.8 -1.9 3.7-1-25-9.3-19.6 -4 2.6-2.1 4.8-0.4 9.6 1.7 4.8 9.7 22-12.9 27.2 -21.2 4.8-15.3 4.4-18.7-0.4 -3.4-4.9-22.6-41.1-40.2-49.1 -17.7-8-26.5 11.5-26.3 15 0.2 3.5-19.8-37.4-32.2-31.6 -13.9 6.4-13.8 24.3-13.8 24.3 -4.9-5.2-39.4-56 25.6-82.6 24.1-9.9 53.5-1.3 53.5-1.3 0 0-1 10 7.4 16.3 15.1 11.3 12.8 15.2 12.8 15.2 0 0 14.9-24.4-16.7-42 0 0 20.9-25 17.8-58.9M258.4 285.6c0 0 11.6-13.6 26.7 1.9 12.5 12.8 28 39 28 39 0.2 1.9-12.5 1.7-22.8 8.2 -8.8 5.6-15.4 2.9-21.1 3 0 0 16.7-12.7 9-26.5 0 0-6.9-15.1-19.8-25.7M297.9 215c1.6 1 4.5 4 5.9 6 0 0 1.8-8.7-2.9-15.5 0 0-6-0.6-9.9 4.2 0 0 3.5 3.1 6.9 5.3M277.2 188.4c0 0-54.1-173.1-191-129 -15.6 5-27.1 12.7-35.5 22.2 -26.4 6.1-41.3-18.6-41.3-18.6 15.4-29.2 45.3-52.3 92.8-60.2 84-14 183.7 26 195.9 106 2.8 18.4 2 52.4-20.9 79.7M8 73.3c0 0 13 16.5 33.7 14.7 0 0-7.8 9.5-11.3 27.8 0 0-18 7.3-30.3-4.5 0 0-0.7-17 8-38M2.7 119.3c0 0 10.8 7.1 23.9 2.1 0 0-2 7.6-1.1 20.4 0 0-7.9 8-19.4 3.3 0 0-4.2-10.6-3.3-25.8M9.9 150.3c0 0 7.6 2.6 14.7-2.5 0 0 0.2 6.5 1.7 13.7 0 0-3.1 6.1-11 4.2 0 0-3.4-6.2-5.3-15.4M26.3 167.4c0 0-3 4-7.8 2.7 0 0 9.4 24.8 27.9 39.6 0 0-17.5-24.5-20.1-42.4M190.5 128.9c0 0-43.1-48.4-94.9-23.3 -6.2 3-15.1 10.3-15.1 10.3 -16.2 3.4-26.6-11.9-26.6-11.9 11.2-22.4 20.5-30 37.1-36.3 50.1-18.8 112.3 2.8 143.5 58.5 0 0-22.3-6.1-44 2.7M53.5 110.3c0 0 6.8 9.7 19.7 9.5 0 0-4.2 5-6.3 16.1 0 0-10.8 4.4-18.2-2.7 0 0-0.4-10.2 4.8-22.9M50.4 138c0 0 6.5 4.3 14.3 1.3 0 0-1.2 4.6-0.7 12.3 0 0-4.7 4.8-11.7 2 0 0-2.5-6.4-2-15.5M54.7 156.7c0 0 4.6 1.5 8.8-1.5 0 0 0.1 3.9 1 8.2 0 0-1.9 3.7-6.6 2.5 0 0-2.1-3.7-3.2-9.3M64.5 166.9c0 0-1.8 2.4-4.7 1.7 0 0 5.7 14.9 16.8 23.8 0 0-10.5-14.7-12.1-25.5"/></svg>
+                    </div>
+                    <div class="ygr-table__content-lead">
+                      <div class="ygr-table__content-subtext">Weekly Race</div>
+                      <div class="ygr-table__content-text">Core Race #21</div>
+                    </div>
+                    <div class="ygr-table__content">
+                      <div class="ygr-table__content-subtext">Rank</div>
+                      <div class="ygr-table__content-text">#5</div>
+                    </div>
+                    <div class="ygr-table__content">
+                      <div class="ygr-table__content-subtext">Score</div>
+                      <div class="ygr-table__content-text">213</div>
+                    </div>
+                    <div class="ygr-table__content">
+                      <div class="ygr-table__content-subtext">End</div>
+                      <div class="ygr-table__content-text">Mar 27, 2018</div>
+                    </div>
+                    <div class="ygr-table__actions">
+                      <button class="ygr-single-action-btn">See Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </p>
+        <p>
+          table2
+        </p>
+        <div style="width: 70%;">
+          <div class="ygr-table">
+            <div class="ygr-table__row">
+              <div class="ygr-table__category-image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366 443" version="1.1" xml:space="preserve" stroke-linejoin="round"><path d="M199 442.5c0 0-0.5-66.6-88.2-103.2 -54.2-22.6-55.2-97.8 7.3-130.8 0 0-19.4 34.3 34.6 77 76.4 60.5 48 149.7 46.4 157M125.6 205.5c0 0 30.3-9.1 57.7 29.8 0 0-8.9 18.6 15.8 53.1 17.2 24 19.8 42.7 11.1 76.6 0 0-2.5-49.3-50.1-84.1 -53.1-38.8-34.5-75.4-34.5-75.4M105.3 208.7c0 0 59.9-91.9 133.1-75.4 0 0 17.4 19.3 29.7 56.5 0 0-55.6-12.5-81.8 37.1 0 0-37.4-50.9-81-18.2M305.8 129.6c0 0 44.5 66.4 25.2 81.2 0 0 25.4 62.1 31.8 73.1 3.9 6.7 3.5 9.5-3.6 23.8 -1.9 3.7-1-25-9.3-19.6 -4 2.6-2.1 4.8-0.4 9.6 1.7 4.8 9.7 22-12.9 27.2 -21.2 4.8-15.3 4.4-18.7-0.4 -3.4-4.9-22.6-41.1-40.2-49.1 -17.7-8-26.5 11.5-26.3 15 0.2 3.5-19.8-37.4-32.2-31.6 -13.9 6.4-13.8 24.3-13.8 24.3 -4.9-5.2-39.4-56 25.6-82.6 24.1-9.9 53.5-1.3 53.5-1.3 0 0-1 10 7.4 16.3 15.1 11.3 12.8 15.2 12.8 15.2 0 0 14.9-24.4-16.7-42 0 0 20.9-25 17.8-58.9M258.4 285.6c0 0 11.6-13.6 26.7 1.9 12.5 12.8 28 39 28 39 0.2 1.9-12.5 1.7-22.8 8.2 -8.8 5.6-15.4 2.9-21.1 3 0 0 16.7-12.7 9-26.5 0 0-6.9-15.1-19.8-25.7M297.9 215c1.6 1 4.5 4 5.9 6 0 0 1.8-8.7-2.9-15.5 0 0-6-0.6-9.9 4.2 0 0 3.5 3.1 6.9 5.3M277.2 188.4c0 0-54.1-173.1-191-129 -15.6 5-27.1 12.7-35.5 22.2 -26.4 6.1-41.3-18.6-41.3-18.6 15.4-29.2 45.3-52.3 92.8-60.2 84-14 183.7 26 195.9 106 2.8 18.4 2 52.4-20.9 79.7M8 73.3c0 0 13 16.5 33.7 14.7 0 0-7.8 9.5-11.3 27.8 0 0-18 7.3-30.3-4.5 0 0-0.7-17 8-38M2.7 119.3c0 0 10.8 7.1 23.9 2.1 0 0-2 7.6-1.1 20.4 0 0-7.9 8-19.4 3.3 0 0-4.2-10.6-3.3-25.8M9.9 150.3c0 0 7.6 2.6 14.7-2.5 0 0 0.2 6.5 1.7 13.7 0 0-3.1 6.1-11 4.2 0 0-3.4-6.2-5.3-15.4M26.3 167.4c0 0-3 4-7.8 2.7 0 0 9.4 24.8 27.9 39.6 0 0-17.5-24.5-20.1-42.4M190.5 128.9c0 0-43.1-48.4-94.9-23.3 -6.2 3-15.1 10.3-15.1 10.3 -16.2 3.4-26.6-11.9-26.6-11.9 11.2-22.4 20.5-30 37.1-36.3 50.1-18.8 112.3 2.8 143.5 58.5 0 0-22.3-6.1-44 2.7M53.5 110.3c0 0 6.8 9.7 19.7 9.5 0 0-4.2 5-6.3 16.1 0 0-10.8 4.4-18.2-2.7 0 0-0.4-10.2 4.8-22.9M50.4 138c0 0 6.5 4.3 14.3 1.3 0 0-1.2 4.6-0.7 12.3 0 0-4.7 4.8-11.7 2 0 0-2.5-6.4-2-15.5M54.7 156.7c0 0 4.6 1.5 8.8-1.5 0 0 0.1 3.9 1 8.2 0 0-1.9 3.7-6.6 2.5 0 0-2.1-3.7-3.2-9.3M64.5 166.9c0 0-1.8 2.4-4.7 1.7 0 0 5.7 14.9 16.8 23.8 0 0-10.5-14.7-12.1-25.5"/></svg>
+              </div>
+              <div class="ygr-table__content-lead">
+                <div class="ygr-table__content-subtext">Weekly Race</div>
+                <div class="ygr-table__content-text">Core Race #21</div>
+              </div>
+              <div class="ygr-table__content">
+                <div class="ygr-table__content-subtext">Rank</div>
+                <div class="ygr-table__content-text">#5</div>
+              </div>
+              <div class="ygr-table__content">
+                <div class="ygr-table__content-subtext">Score</div>
+                <div class="ygr-table__content-text">213</div>
+              </div>
+              <div class="ygr-table__content">
+                <div class="ygr-table__content-subtext">End</div>
+                <div class="ygr-table__content-text">Mar 27, 2018</div>
+              </div>
+              <div class="ygr-table__actions">
+                <button class="ygr-single-action-btn">See Details</button>
+              </div>
+            </div>
+            <div class="ygr-table__row">
+              <div class="ygr-table__category-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366 443" version="1.1" xml:space="preserve" stroke-linejoin="round"><path d="M199 442.5c0 0-0.5-66.6-88.2-103.2 -54.2-22.6-55.2-97.8 7.3-130.8 0 0-19.4 34.3 34.6 77 76.4 60.5 48 149.7 46.4 157M125.6 205.5c0 0 30.3-9.1 57.7 29.8 0 0-8.9 18.6 15.8 53.1 17.2 24 19.8 42.7 11.1 76.6 0 0-2.5-49.3-50.1-84.1 -53.1-38.8-34.5-75.4-34.5-75.4M105.3 208.7c0 0 59.9-91.9 133.1-75.4 0 0 17.4 19.3 29.7 56.5 0 0-55.6-12.5-81.8 37.1 0 0-37.4-50.9-81-18.2M305.8 129.6c0 0 44.5 66.4 25.2 81.2 0 0 25.4 62.1 31.8 73.1 3.9 6.7 3.5 9.5-3.6 23.8 -1.9 3.7-1-25-9.3-19.6 -4 2.6-2.1 4.8-0.4 9.6 1.7 4.8 9.7 22-12.9 27.2 -21.2 4.8-15.3 4.4-18.7-0.4 -3.4-4.9-22.6-41.1-40.2-49.1 -17.7-8-26.5 11.5-26.3 15 0.2 3.5-19.8-37.4-32.2-31.6 -13.9 6.4-13.8 24.3-13.8 24.3 -4.9-5.2-39.4-56 25.6-82.6 24.1-9.9 53.5-1.3 53.5-1.3 0 0-1 10 7.4 16.3 15.1 11.3 12.8 15.2 12.8 15.2 0 0 14.9-24.4-16.7-42 0 0 20.9-25 17.8-58.9M258.4 285.6c0 0 11.6-13.6 26.7 1.9 12.5 12.8 28 39 28 39 0.2 1.9-12.5 1.7-22.8 8.2 -8.8 5.6-15.4 2.9-21.1 3 0 0 16.7-12.7 9-26.5 0 0-6.9-15.1-19.8-25.7M297.9 215c1.6 1 4.5 4 5.9 6 0 0 1.8-8.7-2.9-15.5 0 0-6-0.6-9.9 4.2 0 0 3.5 3.1 6.9 5.3M277.2 188.4c0 0-54.1-173.1-191-129 -15.6 5-27.1 12.7-35.5 22.2 -26.4 6.1-41.3-18.6-41.3-18.6 15.4-29.2 45.3-52.3 92.8-60.2 84-14 183.7 26 195.9 106 2.8 18.4 2 52.4-20.9 79.7M8 73.3c0 0 13 16.5 33.7 14.7 0 0-7.8 9.5-11.3 27.8 0 0-18 7.3-30.3-4.5 0 0-0.7-17 8-38M2.7 119.3c0 0 10.8 7.1 23.9 2.1 0 0-2 7.6-1.1 20.4 0 0-7.9 8-19.4 3.3 0 0-4.2-10.6-3.3-25.8M9.9 150.3c0 0 7.6 2.6 14.7-2.5 0 0 0.2 6.5 1.7 13.7 0 0-3.1 6.1-11 4.2 0 0-3.4-6.2-5.3-15.4M26.3 167.4c0 0-3 4-7.8 2.7 0 0 9.4 24.8 27.9 39.6 0 0-17.5-24.5-20.1-42.4M190.5 128.9c0 0-43.1-48.4-94.9-23.3 -6.2 3-15.1 10.3-15.1 10.3 -16.2 3.4-26.6-11.9-26.6-11.9 11.2-22.4 20.5-30 37.1-36.3 50.1-18.8 112.3 2.8 143.5 58.5 0 0-22.3-6.1-44 2.7M53.5 110.3c0 0 6.8 9.7 19.7 9.5 0 0-4.2 5-6.3 16.1 0 0-10.8 4.4-18.2-2.7 0 0-0.4-10.2 4.8-22.9M50.4 138c0 0 6.5 4.3 14.3 1.3 0 0-1.2 4.6-0.7 12.3 0 0-4.7 4.8-11.7 2 0 0-2.5-6.4-2-15.5M54.7 156.7c0 0 4.6 1.5 8.8-1.5 0 0 0.1 3.9 1 8.2 0 0-1.9 3.7-6.6 2.5 0 0-2.1-3.7-3.2-9.3M64.5 166.9c0 0-1.8 2.4-4.7 1.7 0 0 5.7 14.9 16.8 23.8 0 0-10.5-14.7-12.1-25.5"/></svg>
+              </div>
+              <div class="ygr-table__content-lead">
+                <div class="ygr-table__content-subtext">Weekly Race</div>
+                <div class="ygr-table__content-text">Core Race #21</div>
+              </div>
+              <div class="ygr-table__content">
+                <div class="ygr-table__content-subtext">Rank</div>
+                <div class="ygr-table__content-text">#5</div>
+              </div>
+              <div class="ygr-table__content">
+                <div class="ygr-table__content-subtext">Score</div>
+                <div class="ygr-table__content-text">213</div>
+              </div>
+              <div class="ygr-table__content">
+                <div class="ygr-table__content-subtext">End</div>
+                <div class="ygr-table__content-text">Mar 27, 2018</div>
+              </div>
+              <div class="ygr-table__actions">
+                <button class="ygr-single-action-btn">See Details</button>
+              </div>
+            </div>
+            <div class="ygr-table__row">
+              <div class="ygr-table__category-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366 443" version="1.1" xml:space="preserve" stroke-linejoin="round"><path d="M199 442.5c0 0-0.5-66.6-88.2-103.2 -54.2-22.6-55.2-97.8 7.3-130.8 0 0-19.4 34.3 34.6 77 76.4 60.5 48 149.7 46.4 157M125.6 205.5c0 0 30.3-9.1 57.7 29.8 0 0-8.9 18.6 15.8 53.1 17.2 24 19.8 42.7 11.1 76.6 0 0-2.5-49.3-50.1-84.1 -53.1-38.8-34.5-75.4-34.5-75.4M105.3 208.7c0 0 59.9-91.9 133.1-75.4 0 0 17.4 19.3 29.7 56.5 0 0-55.6-12.5-81.8 37.1 0 0-37.4-50.9-81-18.2M305.8 129.6c0 0 44.5 66.4 25.2 81.2 0 0 25.4 62.1 31.8 73.1 3.9 6.7 3.5 9.5-3.6 23.8 -1.9 3.7-1-25-9.3-19.6 -4 2.6-2.1 4.8-0.4 9.6 1.7 4.8 9.7 22-12.9 27.2 -21.2 4.8-15.3 4.4-18.7-0.4 -3.4-4.9-22.6-41.1-40.2-49.1 -17.7-8-26.5 11.5-26.3 15 0.2 3.5-19.8-37.4-32.2-31.6 -13.9 6.4-13.8 24.3-13.8 24.3 -4.9-5.2-39.4-56 25.6-82.6 24.1-9.9 53.5-1.3 53.5-1.3 0 0-1 10 7.4 16.3 15.1 11.3 12.8 15.2 12.8 15.2 0 0 14.9-24.4-16.7-42 0 0 20.9-25 17.8-58.9M258.4 285.6c0 0 11.6-13.6 26.7 1.9 12.5 12.8 28 39 28 39 0.2 1.9-12.5 1.7-22.8 8.2 -8.8 5.6-15.4 2.9-21.1 3 0 0 16.7-12.7 9-26.5 0 0-6.9-15.1-19.8-25.7M297.9 215c1.6 1 4.5 4 5.9 6 0 0 1.8-8.7-2.9-15.5 0 0-6-0.6-9.9 4.2 0 0 3.5 3.1 6.9 5.3M277.2 188.4c0 0-54.1-173.1-191-129 -15.6 5-27.1 12.7-35.5 22.2 -26.4 6.1-41.3-18.6-41.3-18.6 15.4-29.2 45.3-52.3 92.8-60.2 84-14 183.7 26 195.9 106 2.8 18.4 2 52.4-20.9 79.7M8 73.3c0 0 13 16.5 33.7 14.7 0 0-7.8 9.5-11.3 27.8 0 0-18 7.3-30.3-4.5 0 0-0.7-17 8-38M2.7 119.3c0 0 10.8 7.1 23.9 2.1 0 0-2 7.6-1.1 20.4 0 0-7.9 8-19.4 3.3 0 0-4.2-10.6-3.3-25.8M9.9 150.3c0 0 7.6 2.6 14.7-2.5 0 0 0.2 6.5 1.7 13.7 0 0-3.1 6.1-11 4.2 0 0-3.4-6.2-5.3-15.4M26.3 167.4c0 0-3 4-7.8 2.7 0 0 9.4 24.8 27.9 39.6 0 0-17.5-24.5-20.1-42.4M190.5 128.9c0 0-43.1-48.4-94.9-23.3 -6.2 3-15.1 10.3-15.1 10.3 -16.2 3.4-26.6-11.9-26.6-11.9 11.2-22.4 20.5-30 37.1-36.3 50.1-18.8 112.3 2.8 143.5 58.5 0 0-22.3-6.1-44 2.7M53.5 110.3c0 0 6.8 9.7 19.7 9.5 0 0-4.2 5-6.3 16.1 0 0-10.8 4.4-18.2-2.7 0 0-0.4-10.2 4.8-22.9M50.4 138c0 0 6.5 4.3 14.3 1.3 0 0-1.2 4.6-0.7 12.3 0 0-4.7 4.8-11.7 2 0 0-2.5-6.4-2-15.5M54.7 156.7c0 0 4.6 1.5 8.8-1.5 0 0 0.1 3.9 1 8.2 0 0-1.9 3.7-6.6 2.5 0 0-2.1-3.7-3.2-9.3M64.5 166.9c0 0-1.8 2.4-4.7 1.7 0 0 5.7 14.9 16.8 23.8 0 0-10.5-14.7-12.1-25.5"/></svg>
+              </div>
+              <div class="ygr-table__content-lead">
+                <div class="ygr-table__content-subtext">Weekly Race</div>
+                <div class="ygr-table__content-text">Core Race #21</div>
+              </div>
+              <div class="ygr-table__content">
+                <div class="ygr-table__content-subtext">Rank</div>
+                <div class="ygr-table__content-text">#5</div>
+              </div>
+              <div class="ygr-table__content">
+                <div class="ygr-table__content-subtext">Score</div>
+                <div class="ygr-table__content-text">213</div>
+              </div>
+              <div class="ygr-table__content">
+                <div class="ygr-table__content-subtext">End</div>
+                <div class="ygr-table__content-text">Mar 27, 2018</div>
+              </div>
+              <div class="ygr-table__actions">
+                <button class="ygr-single-action-btn">See Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
 </body>
+
 </html>

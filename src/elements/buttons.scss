@@ -2,23 +2,42 @@ $button-font-color: var(--purple-color);
 $button-font-color-hover: var(--white-color);
 
 .ygr-single-action-btn {
-  background-color: white;
-  border: solid 1px;
-  border-image: linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color) 100%) 1px;
-  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
   color: $button-font-color;
   cursor: pointer;
   font-weight: var(--bold-font-weight);
   height: 4.4rem;
   line-height: 4.5rem;
-  padding: 0 2.1rem;
+  padding: 0;
+  //padding: 0 2.1rem;
+
+  background-image: linear-gradient(#0D1533, #0D1533), linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  &::before {
+    content: ' ';
+    padding-right: 2.1rem;
+    display: inline-block;
+  }
+
+  &::after {
+    content: ' ';
+    padding-left: 2.1rem;
+    display: inline-block;
+  }
 
   &:focus {
     outline: 0;
   }
 
   &:hover {
-    background: linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color) 100%);
+    background-image: linear-gradient(to right, var(--dark-purple-color), var(--light-purple-color)), linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    //border: 1px solid var(--dark-purple-color);
     color: $button-font-color-hover;
 
     & svg {
