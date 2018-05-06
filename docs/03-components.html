@@ -14,7 +14,7 @@ title: The digital Styleguide of Your Game Race - Components
 
   <div class="sg-content">
     <div class="sg-container">
-      <h1 class="ygr-h1" id="01-typography">Components</h1>
+      <h1 class="ygr-h1">Components</h1>
       <p class="sg-p">Components are bigger moveable elements of the site. Usually, they are build upon different elements. They are created
         to fulfill a special requirement like tables that contain data. Modifier extend them to use them in different environment.
         On top of that there are rules to make them responsive.</p>
@@ -201,6 +201,39 @@ title: The digital Styleguide of Your Game Race - Components
               <div class="ygr-table__actions">
                 <button class="ygr-single-action-btn">See Details</button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sg-card sg-item-group">
+        <h2 class="ygr-h2" id="02-area-section">Area section</h2>
+        <h3 class="ygr-h3">Area section elements</h3>
+        <p class="sg-p">
+          <code>.ygr-area-section__column</code> (required):
+          <p class="sg-p">Is the foundation of the basic structure. The component itself goes full-width. A height should be set at this element to span the area. Each col can contain multiple rows. If there are multiple columns then there is a spacing between. Column widths distribute even using <code>flex-grow: 1</code>. It can be overridden using the style attribute to adapt this distribution.</p>
+        </p>
+        <p class="sg-p">
+          <code>.ygr-area-section__row</code> (required):
+          <p class="sg-p">Are used in columns. If a column has multiple rows then there will be spacing between the rows similar to the column spacing. Like in columns the basic weight of the row that is used to calculate its height is defined by <code>flex-grow: 1</code>. It can be overridden inline to adapt the weight of elements.</p>
+        </p>
+        <h3 class="ygr-h3">Area section example</h3>
+        <div class="ygr-area-section" style="height: 400px;">
+          <div class="ygr-area-section__column" style="flex-grow: 2;">
+            <div class="ygr-area-section__row">
+              <div style="background-color: #7a8495;"></div>
+            </div>
+          </div>
+          <div class="ygr-area-section__column">
+            <div class="ygr-area-section__row">
+              <div style="background-color: #6577ff;"></div>
+            </div>
+            <div class="ygr-area-section__row">
+              <div style="background-color: #6577ff;"></div>
+            </div>
+          </div>
+          <div class="ygr-area-section__column">
+            <div class="ygr-area-section__row">
+              <div style="background-color: #fa5746;"></div>
             </div>
           </div>
         </div>

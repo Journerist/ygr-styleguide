@@ -1,0 +1,23 @@
+.ygr-area-section {
+  display: flex;
+  flex-direction: row;
+  margin: -0.5rem;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 0.5rem;
+  }
+
+  &__row {
+    display: flex;
+    flex-grow: 1;
+    padding: 0.5rem 0;
+
+    & > * {
+      width: 100%;
+    }
+  }
+}
