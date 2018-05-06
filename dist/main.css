@@ -42,11 +42,26 @@ body {
   background-color: var(--nav-sidebar-background-color);
   height: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-x: hidden;
   padding-bottom: 4.4rem;
   position: fixed;
-  top: 8rem;
-  width: 35rem; }
+  position: fixed;
+  width: 35rem;
+  top: 0;
+  left: 0;
+  padding-top: 8rem; }
+  .ygr-nav-sidebar::after {
+    content: "";
+    background-image: url("/assets/backgrounds/cloudy.png");
+    background-repeat: no-repeat;
+    background-size: 384rem;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
 
 :root {
   --background-color: #050d2f;
