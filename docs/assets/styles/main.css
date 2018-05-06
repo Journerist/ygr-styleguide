@@ -40,13 +40,13 @@ body {
 
 .ygr-nav-sidebar {
   background-color: var(--nav-sidebar-background-color);
-  width: 35rem;
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   padding-bottom: 4.4rem;
   position: fixed;
-  top: 8rem; }
+  top: 8rem;
+  width: 35rem; }
 
 :root {
   --background-color: #050d2f;
@@ -79,8 +79,8 @@ body {
   flex-direction: row;
   font-size: var(--more-important-font-size);
   height: 8rem;
-  padding: 2rem 0;
   left: 0;
+  padding: 2rem 0;
   position: fixed;
   right: 0;
   top: 0;
@@ -92,10 +92,10 @@ body {
     .ygr-nav-top svg path {
       fill: var(--dark-orange-color); }
   .ygr-nav-top__site-name {
-    text-transform: uppercase;
-    font-weight: var(--medium-font-weight);
     color: var(--white-color);
-    font-size: var(--headline-font-size); }
+    font-size: var(--headline-font-size);
+    font-weight: var(--medium-font-weight);
+    text-transform: uppercase; }
 
 @font-face {
   font-family: "FivoSans";

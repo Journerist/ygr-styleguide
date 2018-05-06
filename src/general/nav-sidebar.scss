@@ -4,12 +4,11 @@ $nav-sidebar-bg-color: var(--nav-sidebar-background-color);
 
 .ygr-nav-sidebar {
   background-color: $nav-sidebar-bg-color;
-  width: 35rem;
-
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   padding-bottom: 4.4rem;
   position: fixed;
   top: 8rem;
+  width: 35rem;
 }

@@ -12,14 +12,12 @@ $nav-top-font-size: var(--more-important-font-size);
   flex-direction: row;
   font-size: $nav-top-font-size;
   height: 8rem;
-  padding: 2rem 0;
-
   left: 0;
+  padding: 2rem 0;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 90;
-
 
   & svg {
     height: 4rem;
@@ -31,9 +29,9 @@ $nav-top-font-size: var(--more-important-font-size);
   }
 
   &__site-name {
-    text-transform: uppercase;
-    font-weight: var(--medium-font-weight);
     color: var(--white-color);
     font-size: var(--headline-font-size);
+    font-weight: var(--medium-font-weight);
+    text-transform: uppercase;
   }
 }
