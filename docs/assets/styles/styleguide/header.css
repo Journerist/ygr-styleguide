@@ -1,15 +1,3 @@
-.sg-header {
-  background: #fff;
-  border-bottom: 1px solid #d1d1d1;
-  display: flex;
-  height: 4.4rem;
-  left: 0;
-  padding: 0.8rem 1.2rem;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 90;
-}
 
 .sg-header__right {
   position: absolute;
@@ -17,8 +5,12 @@
   top: 0.6rem;
 }
 
-.sg-header img {
-  height: 3rem;
-  margin: 0 0.5rem;
-  width: 3rem;
+.sg-header__right svg {
+  height: 4rem;
+  margin: 1rem 0.5rem;
+  width: 4rem;
+}
+
+.sg-header__right svg path {
+  fill: white !important;
 }

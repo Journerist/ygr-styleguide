@@ -1,7 +1,5 @@
 .sg-leftNav {
-  background-color: white;
-  border-right: 1px solid #d1d1d1;
-  height: 100%;
+
   overflow-x: hidden;
   overflow-y: scroll;
   padding-bottom: 4.4rem;
@@ -12,13 +10,13 @@
 }
 
 .sg-leftNav > ul > li {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #3B475D;
   margin-bottom: 1.6rem;
   padding-bottom: 1.6rem;
 }
 
 .sg-leftNav a {
-  color: #646464;
+  color: #fff;
   font-size: 1.4rem;
   line-height: 1.2;
   padding: 0.4rem 1.6rem;
@@ -26,13 +24,12 @@
 }
 
 .sg-leftNav__Heading {
-  color: #757575;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 700;
   padding-left: 1.5rem;
   text-transform: uppercase;
 }
 
 .sg-leftNav__Heading--active {
-  box-shadow: inset 3px 0 0 0 #ff8e25;
+  box-shadow: inset 3px 0 0 0 #fa5746;
 }

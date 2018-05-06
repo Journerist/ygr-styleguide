@@ -88,7 +88,7 @@ $headline-h4-line-height: $headline-h4-size * 1.25;
 $headline-font-weight: var(--medium-font-weight);
 
 .ygr-h1 {
-  color: #4a4a4a;
+  color: #fff;
   font-size: calculate-rem($headline-h1-size);
   font-weight: $headline-font-weight;
   line-height: calculate-rem($headline-h1-line-height);
@@ -96,7 +96,7 @@ $headline-font-weight: var(--medium-font-weight);
 }
 
 .ygr-h2 {
-  color: #4a4a4a;
+  color: #fff;
   font-size: calculate-rem($headline-h2-size);
   font-weight: $headline-font-weight;
   line-height: calculate-rem($headline-h2-line-height);
@@ -104,7 +104,7 @@ $headline-font-weight: var(--medium-font-weight);
 }
 
 .ygr-h3 {
-  color: #4a4a4a;
+  color: #fff;
   font-size: calculate-rem($headline-h3-size);
   font-weight: $headline-font-weight;
   line-height: calculate-rem($headline-h3-line-height);
@@ -112,7 +112,7 @@ $headline-font-weight: var(--medium-font-weight);
 }
 
 .ygr-h4 {
-  color: #4a4a4a;
+  color: #fff;
   font-size: calculate-rem($headline-h4-size);
   font-weight: $headline-font-weight;
   line-height: calculate-rem($headline-h4-line-height);

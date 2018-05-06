@@ -62,5 +62,7 @@ $text-color: var(--white-color);
   }
 
   &__actions {
+    flex-grow: 0.5;
+    text-align: end;
   }
 }

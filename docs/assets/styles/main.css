@@ -1,22 +1,101 @@
 :root {
-  --background-color: #071035;
+  --background-color: #050d2f;
+  --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
+  --nav-top-background-color: rgba(11, 17, 42, 0.3);
   --dark-purple-color: #6859f2;
   --purple-color: #6577ff;
   --light-purple-color: #4e8cff;
   --white-color: #fff;
   --dark-gray-color: #293345;
   --light-gray-color: #7a8495;
-  --dark-orange-color: #FA5746; }
+  --dark-orange-color: #fa5746; }
 
 :root {
   --regular-font-weight: 300;
   --medium-font-weight: 400;
   --bold-font-weight: 600;
   --heavy-font-weight: 700;
+  --headline-font-size: 1.8rem;
   --very-important-font-size: 1.6rem;
+  --more-important-font-size: 1.5rem;
   --important-font-size: 1.4rem;
   --normal-font-size: 1.3rem;
   --hint-font-size: 1.2rem; }
+
+body {
+  background-color: var(--background-color);
+  color: var(--light-gray-color); }
+
+:root {
+  --background-color: #050d2f;
+  --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
+  --nav-top-background-color: rgba(11, 17, 42, 0.3);
+  --dark-purple-color: #6859f2;
+  --purple-color: #6577ff;
+  --light-purple-color: #4e8cff;
+  --white-color: #fff;
+  --dark-gray-color: #293345;
+  --light-gray-color: #7a8495;
+  --dark-orange-color: #fa5746; }
+
+.ygr-nav-sidebar {
+  background-color: var(--nav-sidebar-background-color);
+  width: 35rem;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-bottom: 4.4rem;
+  position: fixed;
+  top: 8rem; }
+
+:root {
+  --background-color: #050d2f;
+  --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
+  --nav-top-background-color: rgba(11, 17, 42, 0.3);
+  --dark-purple-color: #6859f2;
+  --purple-color: #6577ff;
+  --light-purple-color: #4e8cff;
+  --white-color: #fff;
+  --dark-gray-color: #293345;
+  --light-gray-color: #7a8495;
+  --dark-orange-color: #fa5746; }
+
+:root {
+  --regular-font-weight: 300;
+  --medium-font-weight: 400;
+  --bold-font-weight: 600;
+  --heavy-font-weight: 700;
+  --headline-font-size: 1.8rem;
+  --very-important-font-size: 1.6rem;
+  --more-important-font-size: 1.5rem;
+  --important-font-size: 1.4rem;
+  --normal-font-size: 1.3rem;
+  --hint-font-size: 1.2rem; }
+
+.ygr-nav-top {
+  align-items: center;
+  background-color: var(--nav-top-background-color);
+  display: flex;
+  flex-direction: row;
+  font-size: var(--more-important-font-size);
+  height: 8rem;
+  padding: 2rem 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 90; }
+  .ygr-nav-top svg {
+    height: 4rem;
+    margin-left: 3.5rem;
+    width: 5rem; }
+    .ygr-nav-top svg path {
+      fill: var(--dark-orange-color); }
+  .ygr-nav-top__site-name {
+    text-transform: uppercase;
+    font-weight: var(--medium-font-weight);
+    color: var(--white-color);
+    font-size: var(--headline-font-size); }
 
 @font-face {
   font-family: "FivoSans";
@@ -68,35 +147,38 @@ b {
   text-decoration: none; }
 
 .ygr-h1 {
-  color: #4a4a4a;
+  color: #fff;
   font-size: 3.375rem;
   font-weight: var(--medium-font-weight);
   line-height: 3.375rem;
   margin-bottom: 2.4rem; }
 
 .ygr-h2 {
-  color: #4a4a4a;
+  color: #fff;
   font-size: 2.53125rem;
   font-weight: var(--medium-font-weight);
   line-height: 2.81247rem;
   margin-bottom: 2.4rem; }
 
 .ygr-h3 {
-  color: #4a4a4a;
+  color: #fff;
   font-size: 2.10938rem;
   font-weight: var(--medium-font-weight);
   line-height: 2.53125rem;
   margin-bottom: 2.4rem; }
 
 .ygr-h4 {
-  color: #4a4a4a;
+  color: #fff;
   font-size: 1.6875rem;
   font-weight: var(--medium-font-weight);
   line-height: 2.10938rem;
   margin-bottom: 2.4rem; }
 
 .ygr-single-action-btn {
+  background-clip: content-box, border-box;
   background-color: transparent;
+  background-image: linear-gradient(#0d1533, #0d1533), linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color));
+  background-origin: border-box;
   border: 1px solid transparent;
   border-radius: 0.5rem;
   color: var(--purple-color);
@@ -104,36 +186,33 @@ b {
   font-weight: var(--bold-font-weight);
   height: 4.4rem;
   line-height: 4.5rem;
-  padding: 0;
-  background-image: linear-gradient(#0D1533, #0D1533), linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color));
-  background-origin: border-box;
-  background-clip: content-box, border-box; }
+  padding: 0; }
   .ygr-single-action-btn::before {
     content: ' ';
-    padding-right: 2.1rem;
-    display: inline-block; }
+    display: inline-block;
+    padding-right: 2.1rem; }
   .ygr-single-action-btn::after {
     content: ' ';
-    padding-left: 2.1rem;
-    display: inline-block; }
+    display: inline-block;
+    padding-left: 2.1rem; }
   .ygr-single-action-btn:focus {
     outline: 0; }
   .ygr-single-action-btn:hover {
+    background-clip: content-box, border-box;
     background-image: linear-gradient(to right, var(--dark-purple-color), var(--light-purple-color)), linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color));
     background-origin: border-box;
-    background-clip: content-box, border-box;
     color: var(--white-color); }
     .ygr-single-action-btn:hover svg path {
       fill: var(--white-color); }
   .ygr-single-action-btn__icon {
-    height: 1.6rem;
-    width: 1.6rem;
     display: inline-block;
-    position: relative; }
+    height: 1.6rem;
+    position: relative;
+    width: 1.6rem; }
   .ygr-single-action-btn svg {
     height: 1.8rem;
+    left: 0;
     position: absolute;
-    left: 0px;
     top: 0.1rem; }
     .ygr-single-action-btn svg path {
       fill: var(--purple-color); }
@@ -149,16 +228,16 @@ b {
   .ygr-table [class="ygr-table__row"]:last-of-type {
     border-bottom: none; }
   .ygr-table__category-image, .ygr-table__content-lead, .ygr-table__content, .ygr-table__actions {
-    flex-grow: 1;
-    align-self: center; }
+    align-self: center;
+    flex-grow: 1; }
   .ygr-table__content-text {
     color: var(--white-color);
-    font-weight: var(--medium-font-weight);
-    font-size: var(--important-font-size); }
+    font-size: var(--important-font-size);
+    font-weight: var(--medium-font-weight); }
   .ygr-table__content-subtext {
     color: var(--light-gray-color);
-    font-weight: var(--normal-font-weight);
-    font-size: var(--hint-font-size); }
+    font-size: var(--hint-font-size);
+    font-weight: var(--normal-font-weight); }
   .ygr-table__content-hint {
     color: var(--light-gray-color); }
   .ygr-table__category-image {
@@ -170,3 +249,6 @@ b {
         fill: var(--dark-orange-color); }
   .ygr-table__content-lead {
     flex-grow: 3; }
+  .ygr-table__actions {
+    flex-grow: 0.5;
+    text-align: end; }

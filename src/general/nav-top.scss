@@ -1,0 +1,39 @@
+@import '../variables/colors.scss';
+@import '../variables/font.scss';
+
+
+$nav-top-bg-color: var(--nav-top-background-color);
+$nav-top-font-size: var(--more-important-font-size);
+
+.ygr-nav-top {
+  align-items: center;
+  background-color: $nav-top-bg-color;
+  display: flex;
+  flex-direction: row;
+  font-size: $nav-top-font-size;
+  height: 8rem;
+  padding: 2rem 0;
+
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 90;
+
+
+  & svg {
+    height: 4rem;
+    margin-left: 3.5rem;
+    width: 5rem; // its only 4 width, therefore there is already some rem to the right margin
+    & path {
+      fill: var(--dark-orange-color);
+    }
+  }
+
+  &__site-name {
+    text-transform: uppercase;
+    font-weight: var(--medium-font-weight);
+    color: var(--white-color);
+    font-size: var(--headline-font-size);
+  }
+}
