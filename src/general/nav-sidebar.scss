@@ -16,7 +16,7 @@ $nav-sidebar-bg-color: var(--nav-sidebar-background-color);
   width: 35rem;
 
   &::after {
-    background-image: url('/assets/backgrounds/cloudy.png');
+    background-image: url('./assets/backgrounds/cloudy.png');
     background-repeat: no-repeat;
     background-size: 384rem;
     bottom: 0;
