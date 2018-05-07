@@ -8,7 +8,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/i,
-        use: extractSASS.extract(["css-loader", "sass-loader"])
+        use: extractSASS.extract(["css-loader?-url", "sass-loader"])
       },
         { test: /\.svg$/, loader: 'url-loader?limit=65000&mimetype=image/svg+xml&name=assets/fonts/[name].[ext]' },
         { test: /\.woff$/, loader: 'url-loader?limit=65000&mimetype=application/font-woff&name=assets/fonts/[name].[ext]' },
