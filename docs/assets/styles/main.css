@@ -1,7 +1,7 @@
 :root {
   --background-color: #050d2f;
   --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
-  --nav-top-background-color: rgba(11, 17, 42, 0.3);
+  --nav-top-background-color: #0b112a;
   --dark-purple-color: #6859f2;
   --purple-color: #6577ff;
   --light-purple-color: #4e8cff;
@@ -29,7 +29,7 @@ body {
 :root {
   --background-color: #050d2f;
   --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
-  --nav-top-background-color: rgba(11, 17, 42, 0.3);
+  --nav-top-background-color: #0b112a;
   --dark-purple-color: #6859f2;
   --purple-color: #6577ff;
   --light-purple-color: #4e8cff;
@@ -66,7 +66,7 @@ body {
 :root {
   --background-color: #050d2f;
   --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
-  --nav-top-background-color: rgba(11, 17, 42, 0.3);
+  --nav-top-background-color: #0b112a;
   --dark-purple-color: #6859f2;
   --purple-color: #6577ff;
   --light-purple-color: #4e8cff;
