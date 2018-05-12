@@ -20,4 +20,11 @@
       width: 100%;
     }
   }
+
+  &--gapless {
+    .ygr-area-section__column,
+    .ygr-area-section__row {
+      padding: 0;
+    }
+  }
 }
