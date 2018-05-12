@@ -1,12 +1,13 @@
 :root {
   --background-color: #050d2f;
   --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
-  --nav-top-background-color: rgba(11, 17, 42, 1);
+  --nav-top-background-color: rgba(0, 0, 0, 0.3);
   --dark-purple-color: #6859f2; // button gradient start
   --purple-color: #6577ff; // button text
   --light-purple-color: #4e8cff; // button gradient end
   --white-color: #fff; // button gradient end
   --dark-gray-color: #293345; // row separator in tables
-  --light-gray-color: #7a8495; // table sub-content
+  --light-gray-color: #79859a; // table sub-content
   --dark-orange-color: #fa5746; // categorize, mid important things like an premium race icon color, xp bar
+  --dark-blue-color: #040a24; // used for the footer, its without transparency because the footer in the bottom is not absolute positioned and without transparency
 }

@@ -22,6 +22,8 @@
   }
 
   &--gapless {
+    margin: 0;
+
     .ygr-area-section__column,
     .ygr-area-section__row {
       padding: 0;

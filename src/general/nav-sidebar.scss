@@ -1,4 +1,5 @@
-@import '../variables/colors.scss';
+@import "../variables/colors.scss";
+@import "../variables/sizes.scss";
 
 $nav-sidebar-bg-color: var(--nav-sidebar-background-color);
 
@@ -10,22 +11,20 @@ $nav-sidebar-bg-color: var(--nav-sidebar-background-color);
   overflow-x: hidden;
   padding-bottom: 4.4rem;
   padding-top: 8rem;
-  position: fixed;
-  position: fixed;
   top: 0;
-  width: 35rem;
+  width: var(--left-sidebar-width);
 
   &::after {
-    background-image: url('../../assets/backgrounds/cloudy.png');
+    background-image: url("../../assets/backgrounds/cloudy.png");
     background-repeat: no-repeat;
-    background-size: 384rem;
+    background-size: 192rem calc(100% + 20rem);
     bottom: 0;
     content: "";
     left: 0;
-    opacity: 0.2;
     position: absolute;
     right: 0;
     top: 0;
+    width: var(--left-sidebar-width);
     z-index: -1;
   }
 }

@@ -1,0 +1,21 @@
+.ygr-current-user {
+  display: flex;
+  flex-direction: row;
+  line-height: 2rem;
+
+  &__welcome {
+    color: var(--light-gray-color);
+    font-size: var(--important-font-size);
+    font-weight: var(--regular-font-weight);
+  }
+
+  &__name {
+    color: var(--white-color);
+    font-size: var(--more-important-font-size);
+    font-weight: var(--bold-font-weight);
+  }
+
+  &__image {
+    margin: 0 1rem;
+  }
+}

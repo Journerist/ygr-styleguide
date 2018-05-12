@@ -1,5 +1,5 @@
---- 
-title: The digital Styleguide of Your Game Race - Core 
+---
+title: The digital Styleguide of Your Game Race - Core
 ---
 
 <!doctype html>
@@ -11,93 +11,99 @@ title: The digital Styleguide of Your Game Race - Core
 
 <body>
   {% include_relative partials/topBar.html %}
-  {% include_relative partials/leftNav.html %}
+  <div class="ygr-content-with-sidebar">
+    <div class="ygr-content-with-sidebar__sidebar">
+        {% include_relative partials/leftNav.html %}
+    </div>
+    <div class="ygr-content-with-sidebar__content">
 
-  <div class="sg-content">
-    <div class="sg-container">
-      <h1 class="ygr-h1" id="01-typography">Core</h1>
-      <div class="sg-card sg-item-group">
-        <h2 class="ygr-h2">Typography</h2>
-        <h3 class="ygr-h3 sg-item-heading">Font</h3>
-        <p class="sg-p">Your Game Race uses <a class="ygr-a" href="https://befonts.com/fivo-sans-font-family.html">Fivo Sans</a>, a beautiful free font. Feel free to donate some coffee money to its creator.</p>
+      <div class="sg-content">
+        <div class="sg-container">
+          <h1 class="ygr-h1" id="01-typography">Core</h1>
+          <div class="sg-card sg-item-group">
+            <h2 class="ygr-h2">Typography</h2>
+            <h3 class="ygr-h3 sg-item-heading">Font</h3>
+            <p class="sg-p">Your Game Race uses <a class="ygr-a" href="https://befonts.com/fivo-sans-font-family.html">Fivo Sans</a>, a beautiful free font. Feel free to donate some coffee money to its creator.</p>
 
-        <h3 class="ygr-h3 sg-item-heading">Font weights</h3>
-        <p class="sg-p">The default font weight for text is 300. Most of the default text styles will use this. The weight 400 is used for headlines and other more important text. The weight 600 is used for
-          emphasized text as well as table headers, form labels, and some other elements. In rare cases for some elements the heavy font weight 700 is used.</p>
-          <p class="sg-p" style="font-weight: 300;"><span>This is a regular text with font-weight 300.</span></p>
-          <p class="sg-p" style="font-weight: 400;"><span>This is a bolder text with font-weight 400.</span></p>
-          <p class="sg-p" style="font-weight: 600;"><span>This is a bold text with font-weight 600.</span></p>
-          <p class="sg-p" style="font-weight: 700;"><span>This is a heavy text with font-weight 700.</span></p>
-        <h3 class="ygr-h3 sg-item-heading">Headlines</h3>
-        <p class="sg-p">
-          <h1 class="ygr-h1">Headline H1 is about 48pt. Its line-height is equal.</h1>
-          <h2 class="ygr-h2">Headline H2 is 75% of h1. Its line height is 111% of its size.</h2>
-          <h3 class="ygr-h3">Headline H3 is 62.5 % of h1. Its line height is 120 % of its size.</h3>
-          <h4 class="ygr-h4">Headline H4 ia 50% of h1. Its line-height is 125% of its size.</h4>
-        </p>
-      </div>
-
-      <div class="sg-card" id="02-colors">
-        <h2 class="ygr-h2">Colors</h2>
-        <h3 class="ygr-h3 sg-item-heading">Gray</h3>
-        <div class="sg-color-chips">
-          <div class="sg-color-chip" style="border-top-color: #FFFFFF; border-bottom-color: #FFFFFF;">
-            <div class="sg-color-chip__name">White</div>
-            <div class="sg-color-chip__color">#FFFFFF</div>
-            <div class="sg-color-chip__description">Headlines, Active navigation</div>
+            <h3 class="ygr-h3 sg-item-heading">Font weights</h3>
+            <p class="sg-p">The default font weight for text is 300. Most of the default text styles will use this. The weight 400 is used for headlines and other more important text. The weight 600 is used for
+              emphasized text as well as table headers, form labels, and some other elements. In rare cases for some elements the heavy font weight 700 is used.</p>
+              <p class="sg-p" style="font-weight: 300;"><span>This is a regular text with font-weight 300.</span></p>
+              <p class="sg-p" style="font-weight: 400;"><span>This is a bolder text with font-weight 400.</span></p>
+              <p class="sg-p" style="font-weight: 600;"><span>This is a bold text with font-weight 600.</span></p>
+              <p class="sg-p" style="font-weight: 700;"><span>This is a heavy text with font-weight 700.</span></p>
+            <h3 class="ygr-h3 sg-item-heading">Headlines</h3>
+            <p class="sg-p">
+              <h1 class="ygr-h1">Headline H1 is about 48pt. Its line-height is equal.</h1>
+              <h2 class="ygr-h2">Headline H2 is 75% of h1. Its line height is 111% of its size.</h2>
+              <h3 class="ygr-h3">Headline H3 is 62.5 % of h1. Its line height is 120 % of its size.</h3>
+              <h4 class="ygr-h4">Headline H4 ia 50% of h1. Its line-height is 125% of its size.</h4>
+            </p>
           </div>
-          <div class="sg-color-chip" style="border-top-color: #656C7C; border-bottom-color: #656C7C;">
-            <div class="sg-color-chip__name">Dark-Gray</div>
-            <div class="sg-color-chip__color">#656C7C</div>
-            <div class="sg-color-chip__description">Sub-headlines, Inactive navigation</div>
+
+          <div class="sg-card" id="02-colors">
+            <h2 class="ygr-h2">Colors</h2>
+            <h3 class="ygr-h3 sg-item-heading">Gray</h3>
+            <div class="sg-color-chips">
+              <div class="sg-color-chip" style="border-top-color: #FFFFFF; border-bottom-color: #FFFFFF;">
+                <div class="sg-color-chip__name">White</div>
+                <div class="sg-color-chip__color">#FFFFFF</div>
+                <div class="sg-color-chip__description">Headlines, Active navigation</div>
+              </div>
+              <div class="sg-color-chip" style="border-top-color: #656C7C; border-bottom-color: #656C7C;">
+                <div class="sg-color-chip__name">Dark-Gray</div>
+                <div class="sg-color-chip__color">#656C7C</div>
+                <div class="sg-color-chip__description">Sub-headlines, Inactive navigation</div>
+              </div>
+            </div>
+
+            <h3 class="sg-h3 sg-item-heading">Purple</h3>
+            <div class="sg-color-chips">
+              <div class="sg-color-chip" style="border-top-color: var(--dark-purple-color); border-bottom-color: var(--dark-purple-color);">
+                <div class="sg-color-chip__name">Dark-purple</div>
+                <div class="sg-color-chip__color">#6859f2</div>
+                <div class="sg-color-chip__description">Usually used for links and  in button transitions.</div>
+              </div>
+
+              <div class="sg-color-chip" style="border-top-color: var(--purple-color); border-bottom-color: var(--purple-color);">
+                <div class="sg-color-chip__name">Purple</div>
+                <div class="sg-color-chip__color">#6577ff</div>
+                <div class="sg-color-chip__description">Button text is between bot purple colors.</div>
+              </div>
+
+              <div class="sg-color-chip" style="border-top-color: var(--light-purple-color); border-bottom-color: var(--light-purple-color);">
+                <div class="sg-color-chip__name">Light-purple</div>
+                <div class="sg-color-chip__color">#4e8cff</div>
+                <div class="sg-color-chip__description">Usually used in button transitions.</div>
+              </div>
+            </div>
+
+            <h3 class="sg-h3 sg-item-heading">Orange</h3>
+            <div class="sg-color-chips">
+              <div class="sg-color-chip" style="border-top-color: #DA6635; border-bottom-color: #DA6635;">
+                <div class="sg-color-chip__name">Orange-regular</div>
+                <div class="sg-color-chip__color">#DA6635</div>
+                <div class="sg-color-chip__description">Secondary color for important things like links, active navigation, icons</div>
+              </div>
+            </div>
+
+            <h3 class="sg-h3 sg-item-heading">Other action colors</h3>
+            <div class="sg-color-chips">
+              <div class="sg-color-chip" style="border-top-color: #3ABE6B; border-bottom-color: #3ABE6B;">
+                <div class="sg-color-chip__name">Green-regular</div>
+                <div class="sg-color-chip__color">#3ABE6B</div>
+              </div>
+              <div class="sg-color-chip" style="border-top-color: #2B9BE7; border-bottom-color: #2B9BE7;">
+                <div class="sg-color-chip__name">Blue-regular</div>
+                <div class="sg-color-chip__color">#2B9BE7</div>
+              </div>
+            </div>
+
           </div>
         </div>
-
-        <h3 class="sg-h3 sg-item-heading">Purple</h3>
-        <div class="sg-color-chips">
-          <div class="sg-color-chip" style="border-top-color: var(--dark-purple-color); border-bottom-color: var(--dark-purple-color);">
-            <div class="sg-color-chip__name">Dark-purple</div>
-            <div class="sg-color-chip__color">#6859f2</div>
-            <div class="sg-color-chip__description">Usually used for links and  in button transitions.</div>
-          </div>
-
-          <div class="sg-color-chip" style="border-top-color: var(--purple-color); border-bottom-color: var(--purple-color);">
-            <div class="sg-color-chip__name">Purple</div>
-            <div class="sg-color-chip__color">#6577ff</div>
-            <div class="sg-color-chip__description">Button text is between bot purple colors.</div>
-          </div>
-
-          <div class="sg-color-chip" style="border-top-color: var(--light-purple-color); border-bottom-color: var(--light-purple-color);">
-            <div class="sg-color-chip__name">Light-purple</div>
-            <div class="sg-color-chip__color">#4e8cff</div>
-            <div class="sg-color-chip__description">Usually used in button transitions.</div>
-          </div>
-        </div>
-
-        <h3 class="sg-h3 sg-item-heading">Orange</h3>
-        <div class="sg-color-chips">
-          <div class="sg-color-chip" style="border-top-color: #DA6635; border-bottom-color: #DA6635;">
-            <div class="sg-color-chip__name">Orange-regular</div>
-            <div class="sg-color-chip__color">#DA6635</div>
-            <div class="sg-color-chip__description">Secondary color for important things like links, active navigation, icons</div>
-          </div>
-        </div>
-
-        <h3 class="sg-h3 sg-item-heading">Other action colors</h3>
-        <div class="sg-color-chips">
-          <div class="sg-color-chip" style="border-top-color: #3ABE6B; border-bottom-color: #3ABE6B;">
-            <div class="sg-color-chip__name">Green-regular</div>
-            <div class="sg-color-chip__color">#3ABE6B</div>
-          </div>
-          <div class="sg-color-chip" style="border-top-color: #2B9BE7; border-bottom-color: #2B9BE7;">
-            <div class="sg-color-chip__name">Blue-regular</div>
-            <div class="sg-color-chip__color">#2B9BE7</div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
-
+  {% include_relative partials/footer.html %}
 </body>
 </html>

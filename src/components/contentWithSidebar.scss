@@ -1,0 +1,15 @@
+.ygr-content-with-sidebar {
+  display: flex;
+  flex-direction: row;
+
+  &__sidebar {
+    height: 100%;
+    position: fixed;
+  }
+
+  &__content {
+    background-color: $body-background-color;
+    margin-left: var(--left-sidebar-width);
+    width: calc(100% - var(--left-sidebar-width));
+  }
+}

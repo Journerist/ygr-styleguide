@@ -1,0 +1,11 @@
+.ygr-avatar {
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
+
+  /* make a square container */
+  height: 4rem;
+  width: 4rem;
+}

@@ -1,14 +1,15 @@
 :root {
   --background-color: #050d2f;
   --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
-  --nav-top-background-color: #0b112a;
+  --nav-top-background-color: rgba(0, 0, 0, 0.3);
   --dark-purple-color: #6859f2;
   --purple-color: #6577ff;
   --light-purple-color: #4e8cff;
   --white-color: #fff;
   --dark-gray-color: #293345;
-  --light-gray-color: #7a8495;
-  --dark-orange-color: #fa5746; }
+  --light-gray-color: #79859a;
+  --dark-orange-color: #fa5746;
+  --dark-blue-color: #040a24; }
 
 :root {
   --regular-font-weight: 300;
@@ -23,20 +24,24 @@
   --hint-font-size: 1.2rem; }
 
 body {
-  background-color: var(--background-color);
   color: var(--light-gray-color); }
 
 :root {
   --background-color: #050d2f;
   --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
-  --nav-top-background-color: #0b112a;
+  --nav-top-background-color: rgba(0, 0, 0, 0.3);
   --dark-purple-color: #6859f2;
   --purple-color: #6577ff;
   --light-purple-color: #4e8cff;
   --white-color: #fff;
   --dark-gray-color: #293345;
-  --light-gray-color: #7a8495;
-  --dark-orange-color: #fa5746; }
+  --light-gray-color: #79859a;
+  --dark-orange-color: #fa5746;
+  --dark-blue-color: #040a24; }
+
+:root {
+  --left-sidebar-width: 35rem;
+  --nav-top-height: 8rem; }
 
 .ygr-nav-sidebar {
   background-color: var(--nav-sidebar-background-color);
@@ -46,34 +51,33 @@ body {
   overflow-x: hidden;
   padding-bottom: 4.4rem;
   padding-top: 8rem;
-  position: fixed;
-  position: fixed;
   top: 0;
-  width: 35rem; }
+  width: var(--left-sidebar-width); }
   .ygr-nav-sidebar::after {
     background-image: url("../../assets/backgrounds/cloudy.png");
     background-repeat: no-repeat;
-    background-size: 384rem;
+    background-size: 192rem calc(100% + 20rem);
     bottom: 0;
     content: "";
     left: 0;
-    opacity: 0.2;
     position: absolute;
     right: 0;
     top: 0;
+    width: var(--left-sidebar-width);
     z-index: -1; }
 
 :root {
   --background-color: #050d2f;
   --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
-  --nav-top-background-color: #0b112a;
+  --nav-top-background-color: rgba(0, 0, 0, 0.3);
   --dark-purple-color: #6859f2;
   --purple-color: #6577ff;
   --light-purple-color: #4e8cff;
   --white-color: #fff;
   --dark-gray-color: #293345;
-  --light-gray-color: #7a8495;
-  --dark-orange-color: #fa5746; }
+  --light-gray-color: #79859a;
+  --dark-orange-color: #fa5746;
+  --dark-blue-color: #040a24; }
 
 :root {
   --regular-font-weight: 300;
@@ -93,10 +97,10 @@ body {
   display: flex;
   flex-direction: row;
   font-size: var(--more-important-font-size);
-  height: 8rem;
+  height: var(--nav-top-height);
   left: 0;
   padding: 2rem 0;
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   z-index: 90; }
@@ -106,11 +110,13 @@ body {
     width: 5rem; }
     .ygr-nav-top svg path {
       fill: var(--dark-orange-color); }
-  .ygr-nav-top__site-name {
-    color: var(--white-color);
-    font-size: var(--headline-font-size);
-    font-weight: var(--medium-font-weight);
-    text-transform: uppercase; }
+  .ygr-nav-top__left-nav-part {
+    height: 100%;
+    width: var(--left-sidebar-width); }
+  .ygr-nav-top__logo {
+    margin-left: 4rem; }
+  .ygr-nav-top__motivation {
+    margin-left: 8rem; }
 
 @font-face {
   font-family: "FivoSans";
@@ -190,6 +196,7 @@ b {
   margin-bottom: 2.4rem; }
 
 .ygr-single-action-btn {
+  align-items: center;
   background-clip: content-box, border-box;
   background-color: transparent;
   background-image: linear-gradient(#0d1533, #0d1533), linear-gradient(to right, var(--dark-purple-color) 0%, var(--light-purple-color));
@@ -198,16 +205,19 @@ b {
   border-radius: 0.5rem;
   color: var(--purple-color);
   cursor: pointer;
+  display: flex;
+  font-size: var(--very-important-font-size);
   font-weight: var(--bold-font-weight);
   height: 4.4rem;
+  justify-content: center;
   line-height: 4.5rem;
   padding: 0; }
   .ygr-single-action-btn::before {
-    content: ' ';
+    content: " ";
     display: inline-block;
     padding-right: 2.1rem; }
   .ygr-single-action-btn::after {
-    content: ' ';
+    content: " ";
     display: inline-block;
     padding-left: 2.1rem; }
   .ygr-single-action-btn:focus {
@@ -222,15 +232,36 @@ b {
   .ygr-single-action-btn__icon {
     display: inline-block;
     height: 1.6rem;
+    margin-top: -0.5rem;
     position: relative;
-    width: 1.6rem; }
+    width: 2.6rem; }
   .ygr-single-action-btn svg {
-    height: 1.8rem;
+    height: 1.6rem;
     left: 0;
     position: absolute;
     top: 0.1rem; }
     .ygr-single-action-btn svg path {
       fill: var(--purple-color); }
+
+.ygr-avatar {
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
+  /* make a square container */
+  height: 4rem;
+  width: 4rem; }
+
+.ygr-content-with-sidebar {
+  display: flex;
+  flex-direction: row; }
+  .ygr-content-with-sidebar__sidebar {
+    height: 100%;
+    position: fixed; }
+  .ygr-content-with-sidebar__content {
+    background-color: var(--background-color);
+    margin-left: var(--left-sidebar-width);
+    width: calc(100% - var(--left-sidebar-width)); }
 
 .ygr-table {
   display: flex;
@@ -284,6 +315,32 @@ b {
     padding: 0.5rem 0; }
     .ygr-area-section__row > * {
       width: 100%; }
-  .ygr-area-section--gapless .ygr-area-section__column,
-  .ygr-area-section--gapless .ygr-area-section__row {
-    padding: 0; }
+  .ygr-area-section--gapless {
+    margin: 0; }
+    .ygr-area-section--gapless .ygr-area-section__column,
+    .ygr-area-section--gapless .ygr-area-section__row {
+      padding: 0; }
+
+.ygr-footer {
+  align-items: center;
+  background-color: #040a24;
+  display: flex;
+  height: 9rem;
+  justify-content: center;
+  text-align: center;
+  width: 100%; }
+
+.ygr-current-user {
+  display: flex;
+  flex-direction: row;
+  line-height: 2rem; }
+  .ygr-current-user__welcome {
+    color: var(--light-gray-color);
+    font-size: var(--important-font-size);
+    font-weight: var(--regular-font-weight); }
+  .ygr-current-user__name {
+    color: var(--white-color);
+    font-size: var(--more-important-font-size);
+    font-weight: var(--bold-font-weight); }
+  .ygr-current-user__image {
+    margin: 0 1rem; }

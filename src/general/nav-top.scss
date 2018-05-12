@@ -1,5 +1,5 @@
-@import '../variables/colors.scss';
-@import '../variables/font.scss';
+@import "../variables/colors.scss";
+@import "../variables/font.scss";
 
 $nav-top-bg-color: var(--nav-top-background-color);
 $nav-top-font-size: var(--more-important-font-size);
@@ -10,10 +10,10 @@ $nav-top-font-size: var(--more-important-font-size);
   display: flex;
   flex-direction: row;
   font-size: $nav-top-font-size;
-  height: 8rem;
+  height: var(--nav-top-height);
   left: 0;
   padding: 2rem 0;
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   z-index: 90;
@@ -27,10 +27,19 @@ $nav-top-font-size: var(--more-important-font-size);
     }
   }
 
-  &__site-name {
-    color: var(--white-color);
-    font-size: var(--headline-font-size);
-    font-weight: var(--medium-font-weight);
-    text-transform: uppercase;
+  &__left-nav-part {
+    height: 100%;
+    width: var(--left-sidebar-width);
+  }
+
+  &__logo {
+    margin-left: 4rem;
+  }
+
+  &__content-part {
+  }
+
+  &__motivation {
+    margin-left: 8rem;
   }
 }
