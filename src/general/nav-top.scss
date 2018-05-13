@@ -11,12 +11,15 @@ $nav-top-font-size: var(--more-important-font-size);
   flex-direction: row;
   font-size: $nav-top-font-size;
   height: var(--nav-top-height);
-  left: 0;
   padding: 2rem 0;
   position: absolute;
-  right: 0;
   top: 0;
+  width: calc(100% - var(--left-sidebar-width));
   z-index: 90;
+
+  &--sidebar {
+    width: var(--left-sidebar-width);
+  }
 
   & svg {
     height: 4rem;

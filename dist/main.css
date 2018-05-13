@@ -98,12 +98,13 @@ body {
   flex-direction: row;
   font-size: var(--more-important-font-size);
   height: var(--nav-top-height);
-  left: 0;
   padding: 2rem 0;
   position: absolute;
-  right: 0;
   top: 0;
+  width: calc(100% - var(--left-sidebar-width));
   z-index: 90; }
+  .ygr-nav-top--sidebar {
+    width: var(--left-sidebar-width); }
   .ygr-nav-top svg {
     height: 4rem;
     margin-left: 3.5rem;
