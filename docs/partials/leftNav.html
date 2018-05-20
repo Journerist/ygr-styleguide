@@ -1,44 +1,80 @@
-<nav class="sg-leftNav ygr-nav-sidebar">
+<nav class="ygr-nav-sidebar">
     {% include_relative partials/topBar_leftNav.html %}
   <ul>
     <li>
-      <a href="index.html" class="sg-leftNav__Heading {% if '/' == page.url %}sg-leftNav__Heading--active{% endif %}">Styleguide</a>
+      <a href="index.html" class="ygr-nav-sidebar__Heading {% if '/' == page.url %}ygr-nav-sidebar__Heading--active{% endif %}">
+        <svg class="ygr-nav-sidebar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"/></svg>
+        <div class="ygr-nav-sidebar__heading-text">Styleguide</div>
+      </a>
     </li>
     <li>
-      <a href="01-core.html" class="sg-leftNav__Heading {% if '/01-core.html' == page.url %}sg-leftNav__Heading--active{% endif %}">Core</a>
+      <div class="ygr-nav-sidebar__bumper"></div>
+    </li>
+    <li>
+      <a href="01-core.html" class="ygr-nav-sidebar__Heading {% if '/01-core.html' == page.url %}ygr-nav-sidebar__Heading--active{% endif %}">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" class="ygr-nav-sidebar__icon">
+          <image id="icon" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAP1BMVEVTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnMAAABz6YVBAAAAE3RSTlMAYLDObL/moxwGtiLrH7drmc0Lpdeu6gAAAAFiS0dEFJLfyTUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBRQRLBcnxXi/AAAAZ0lEQVQY022PSRKAIAwEJwRkccX8/6+iKMnBPmW6ahIAQDIgAM6xCnYOwlawQMhW6E94K7wgTFFFnAJSEENI7XAuXywZD/PS8zLjZd3uvK1QdpEdFur/GJWjPZ8PrdS+tA7xnT3bfAGuEAsLPRS+ygAAAABJRU5ErkJggg=="/>
+        </svg>
+        <div class="ygr-nav-sidebar__heading-text">Core</div>
+      </a>
       <ul>
         <li>
-          <a href="01-core.html#01-typography">Typography</a>
+          <a href="01-core.html#01-typography">
+            <div class="ygr-nav-sidebar__heading-subtext">Typography</div>
+          </a>
         </li>
         <li>
-          <a href="01-core.html#02-colors">Colors</a>
+          <a href="01-core.html#02-colors">
+              <div class="ygr-nav-sidebar__heading-subtext">Colors</div>
+
+              </a>
         </li>
       </ul>
     </li>
 
     <li>
-      <a href="02-elements.html" class="sg-leftNav__Heading {% if '/02-elements.html' == page.url %}sg-leftNav__Heading--active{% endif %}">Elements</a>
+      <a href="02-elements.html" class="ygr-nav-sidebar__Heading {% if '/02-elements.html' == page.url %}ygr-nav-sidebar__Heading--active{% endif %}">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="18" viewBox="0 0 16 18" class="ygr-nav-sidebar__icon">
+          <image id="icon" width="16" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAMAAABl5a5YAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEVTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnMAAABRuL5LAAAAEHRSTlMAATtAEIdQ9fAuIFgUPEoDx7U6AgAAAAFiS0dEEeK1PboAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBRQRJCfJxcIbAAAAVUlEQVQY052O2wqAMAxDs3V2Ny/5/691ExkrgojnJfQ8JIXzMhPgaRAIF1WNZGyxXEIBJDK10I+ik0PIo7RTgPIuqkg14vHYYL1nJ36IjbsVzh/mPgF60QelpokA7AAAAABJRU5ErkJggg=="/>
+        </svg>
+        <div class="ygr-nav-sidebar__heading-text">Elements</div>
+      </a>
       <ul>
           <li>
-            <a href="02-elements.html#01-buttons">Buttons</a>
+            <a href="02-elements.html#01-buttons">
+              <div class="ygr-nav-sidebar__heading-subtext">Buttons</div>
+            </a>
           </li>
           <li>
-            <a href="02-elements.html#02-avatar">Avatar</a>
+            <a href="02-elements.html#02-avatar">
+             <div class="ygr-nav-sidebar__heading-subtext">Avatar</div>
+            </a>
           </li>
       </ul>
     </li>
 
     <li>
-      <a href="03-components.html" class="sg-leftNav__Heading {% if '/03-components.html' == page.url %}sg-leftNav__Heading--active{% endif %}">Components</a>
+      <a href="03-components.html" class="ygr-nav-sidebar__Heading {% if '/03-components.html' == page.url %}ygr-nav-sidebar__Heading--active{% endif %}">
+        <svg class="ygr-nav-sidebar__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="14" viewBox="0 0 16 14">
+          <image id="icon" width="16" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAMAAAAR8Wy4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAnFBMVEVTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnNTXnMAAAAB3Dr5AAAAMnRSTlMAA0aGPohIBEzcYE17ztsMY/oiTmEX8THG8xR8HH/Mde6msB1KtagYHxCCttJe1i6uL8I9KJgAAAABYktHRDM31XxeAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gUUETYRfosnUQAAAItJREFUCNdVj+sSwVAMhBelUoqqupWquvem8v4PJzlHDd+PJLvZyUwAodPtOU5/4OLDkJg9j5lGVo9Z8H0pk6nqGbcE83ABREumFVlnHWy2iGUT7qhN7ZGwcQ5xaowEx0ydE3BWfbnKVR0i4Kb9/oBN5kBuhhSFPVaWtheo+I8Kbv2ra/nn2WRfmhfemBAdo+Dh13QAAAAASUVORK5CYII="/>
+        </svg>
+        <div class="ygr-nav-sidebar__heading-text">Components</div>
+      </a>
       <ul>
         <li>
-          <a href="03-components.html#01-tables">Tables</a>
+          <a href="03-components.html#01-tables">
+              <div class="ygr-nav-sidebar__heading-subtext">Tables</div>
+          </a>
         </li>
         <li>
-          <a href="03-components.html#02-area-section">Area section</a>
+          <a href="03-components.html#02-area-section">
+            <div class="ygr-nav-sidebar__heading-subtext">Area section</div>
+          </a>
         </li>
         <li>
-          <a href="03-components.html#03-current-user">Current user</a>
+          <a href="03-components.html#03-current-user">
+            <div class="ygr-nav-sidebar__heading-subtext">Current user</div>
+          </a>
         </li>
       </ul>
     </li>

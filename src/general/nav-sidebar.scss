@@ -2,6 +2,7 @@
 @import "../variables/sizes.scss";
 
 $nav-sidebar-bg-color: var(--nav-sidebar-background-color);
+$heading-height: 5.6rem;
 
 .ygr-nav-sidebar {
   background-color: $nav-sidebar-bg-color;
@@ -12,6 +13,7 @@ $nav-sidebar-bg-color: var(--nav-sidebar-background-color);
   padding-bottom: 4.4rem;
   padding-top: 8rem;
   top: 0;
+  user-select: none;
   width: var(--left-sidebar-width);
 
   &::after {
@@ -26,5 +28,73 @@ $nav-sidebar-bg-color: var(--nav-sidebar-background-color);
     top: 0;
     width: var(--left-sidebar-width);
     z-index: -1;
+  }
+
+  & a {
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  &__Heading {
+    align-items: center;
+    display: flex;
+    font-size: var(--more-important-font-size);
+    font-weight: var(--regular-font-weight);
+    height: $heading-height;
+    padding-left: 4rem;
+    position: relative;
+  }
+
+  &__Heading--active {
+    background-color: rgba(255, 255, 255, 0.05);
+
+    & .ygr-nav-sidebar__heading-text {
+      color: var(--white-color);
+    }
+
+    & .ygr-nav-sidebar__icon path {
+      fill: var(--white-color);
+    }
+  }
+
+  &__Heading--active::before {
+    content: " ";
+    background: linear-gradient(to bottom, #e56a33 0%, #e34a51 100%);
+    height: $heading-height;
+    width: 0.5rem;
+    position: absolute;
+    left: 0;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 1.9rem;
+    height: 1.6rem;
+
+    & path {
+      fill: var(--light-gray-color);
+    }
+  }
+
+  &__heading-text {
+    color: var(--light-gray-color);
+    margin-left: 3rem;
+  }
+
+  &__bumper {
+    border-bottom: 1px solid var(--light-gray-color);
+    height: 2rem;
+    margin-bottom: 2rem;
+    width: 5rem;
+    margin-left: 4rem;
+  }
+
+  &__heading-subtext {
+    color: var(--light-gray-color);
+    height: $heading-height/2;
+    margin: 0.5rem 0 0.5rem 9rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--regular-font-weight);
+    position: relative;
   }
 }

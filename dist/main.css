@@ -26,6 +26,9 @@
 body {
   color: var(--light-gray-color); }
 
+ul {
+  margin: 0; }
+
 :root {
   --background-color: #050d2f;
   --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
@@ -52,6 +55,7 @@ body {
   padding-bottom: 4.4rem;
   padding-top: 8rem;
   top: 0;
+  user-select: none;
   width: var(--left-sidebar-width); }
   .ygr-nav-sidebar::after {
     background-image: url("../../assets/backgrounds/cloudy.png");
@@ -65,6 +69,52 @@ body {
     top: 0;
     width: var(--left-sidebar-width);
     z-index: -1; }
+  .ygr-nav-sidebar a {
+    line-height: 1.2;
+    text-decoration: none; }
+  .ygr-nav-sidebar__Heading {
+    align-items: center;
+    display: flex;
+    font-size: var(--more-important-font-size);
+    font-weight: var(--regular-font-weight);
+    height: 5.6rem;
+    padding-left: 4rem;
+    position: relative; }
+  .ygr-nav-sidebar__Heading--active {
+    background-color: rgba(255, 255, 255, 0.05); }
+    .ygr-nav-sidebar__Heading--active .ygr-nav-sidebar__heading-text {
+      color: var(--white-color); }
+    .ygr-nav-sidebar__Heading--active .ygr-nav-sidebar__icon path {
+      fill: var(--white-color); }
+  .ygr-nav-sidebar__Heading--active::before {
+    content: " ";
+    background: linear-gradient(to bottom, #e56a33 0%, #e34a51 100%);
+    height: 5.6rem;
+    width: 0.5rem;
+    position: absolute;
+    left: 0; }
+  .ygr-nav-sidebar__icon {
+    position: absolute;
+    top: 1.9rem;
+    height: 1.6rem; }
+    .ygr-nav-sidebar__icon path {
+      fill: var(--light-gray-color); }
+  .ygr-nav-sidebar__heading-text {
+    color: var(--light-gray-color);
+    margin-left: 3rem; }
+  .ygr-nav-sidebar__bumper {
+    border-bottom: 1px solid var(--light-gray-color);
+    height: 2rem;
+    margin-bottom: 2rem;
+    width: 5rem;
+    margin-left: 4rem; }
+  .ygr-nav-sidebar__heading-subtext {
+    color: var(--light-gray-color);
+    height: 2.8rem;
+    margin: 0.5rem 0 0.5rem 9rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--regular-font-weight);
+    position: relative; }
 
 :root {
   --background-color: #050d2f;

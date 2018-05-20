@@ -7,9 +7,17 @@ title: The digital Styleguide of Your Game Race
   {% include_relative partials/head.html %}
 </head>
 <body>
-  {% include_relative partials/topBar.html %}
-  {% include_relative partials/leftNav.html %}
-  <div class="sg-content">
+  <div class="ygr-content-with-sidebar">
+    <div class="ygr-content-with-sidebar__sidebar">
+        {% include_relative partials/leftNav.html %}
+    </div>
+    <div class="ygr-content-with-sidebar__content">
+      {% include_relative partials/topBar.html %}
+      <div class="sg-content">
+        <div class="sg-container">
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
