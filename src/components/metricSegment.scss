@@ -10,11 +10,12 @@
   padding: 2.8rem;
 
   &__number {
-    background: linear-gradient(
-      to right,
-      var(--dark-purple-color),
-      var(--light-purple-color)
-    );
+    background:
+      linear-gradient(
+        to right,
+        var(--dark-purple-color),
+        var(--light-purple-color)
+      );
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 6rem;

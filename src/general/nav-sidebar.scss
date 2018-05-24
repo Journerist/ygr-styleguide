@@ -58,18 +58,18 @@ $heading-height: 5.6rem;
   }
 
   &__Heading--active::before {
-    content: " ";
     background: linear-gradient(to bottom, #e56a33 0%, #e34a51 100%);
+    content: " ";
     height: $heading-height;
-    width: 0.5rem;
-    position: absolute;
     left: 0;
+    position: absolute;
+    width: 0.5rem;
   }
 
   &__icon {
+    height: 1.6rem;
     position: absolute;
     top: 1.9rem;
-    height: 1.6rem;
 
     & path {
       fill: var(--light-gray-color);
@@ -85,16 +85,16 @@ $heading-height: 5.6rem;
     border-bottom: 1px solid var(--light-gray-color);
     height: 2rem;
     margin-bottom: 2rem;
-    width: 5rem;
     margin-left: 4rem;
+    width: 5rem;
   }
 
   &__heading-subtext {
     color: var(--light-gray-color);
-    height: $heading-height/2;
-    margin: 0.5rem 0 0.5rem 9rem;
     font-size: var(--normal-font-size);
     font-weight: var(--regular-font-weight);
+    height: $heading-height/2;
+    margin: 0.5rem 0 0.5rem 9rem;
     position: relative;
   }
 }
