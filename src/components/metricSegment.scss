@@ -1,5 +1,8 @@
+@import "../mixins/card";
+
 .ygr-metric-segment {
-  background-color: var(--light-blue-color);
+  @include card;
+
   display: inline-flex;
   flex-direction: row;
 
