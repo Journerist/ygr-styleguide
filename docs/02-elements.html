@@ -10,22 +10,23 @@ title: The digital Styleguide of Your Game Race - Elements
 </head>
 
 <body>
-    <div class="ygr-content-with-sidebar">
-      <div class="ygr-content-with-sidebar__sidebar">
-          {% include_relative partials/leftNav.html %}
-      </div>
-      <div class="ygr-content-with-sidebar__content">
-        {% include_relative partials/topBar.html %}
+  <div class="ygr-content-with-sidebar">
+    <div class="ygr-content-with-sidebar__sidebar">
+      {% include_relative partials/leftNav.html %}
+    </div>
+    <div class="ygr-content-with-sidebar__content">
+      {% include_relative partials/topBar.html %}
       <div class="sg-content">
         <div class="sg-container">
           <h1 class="ygr-h1" id="01-typography">Elements</h1>
-          <p class="sg-p">Elements are smaller parts of the page. These these parts could be available natively in a YGR-Style world like dropdowns, buttons or icons.</p>
+          <p class="sg-p">Elements are smaller parts of the page. These these parts could be available natively in a YGR-Style world like
+            dropdowns, buttons or icons.</p>
           <div class="sg-card sg-item-group">
             <h2 class="ygr-h2" id="01-buttons">Buttons</h2>
             <h3 class="ygr-h3 sg-item-heading">Single-Action-Buttons</h3>
             <p class="sg-p">Your Game Race uses Actions buttons in different colors.</p>
             <p>
-                <button class="ygr-single-action-btn">See Details</button>
+              <button class="ygr-single-action-btn">See Details</button>
             </p>
 
             <h3 class="ygr-h3 sg-item-heading">Single-Action-Buttons with icon</h3>
@@ -33,24 +34,47 @@ title: The digital Styleguide of Your Game Race - Elements
             <p>
               <button class="ygr-single-action-btn">
                 <div class="ygr-single-action-btn__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"
+                    />
+                  </svg>
                 </div>
                 Go Premium
               </button>
             </p>
-          </div>
-          <h2 class="ygr-h2" id="02-avatar">Avatar</h2>
+            <h2 class="ygr-h2" id="02-avatar">Avatar</h2>
             <h3 class="ygr-h3 sg-item-heading">Basic Avatar</h3>
             <p class="sg-p">Your Game Race uses avatars to show a picture in the current user component.</p>
             <p>
-                <div class="ygr-avatar" style="background-image: url(./assets/examples/maiden.jpg); background-size: 15.6rem; background-position: 10rem 7.4rem;"></div>
-                <div class"sg-note">Image created by <a href="https://virtualman209.deviantart.com/" target="_blank">VirtualMan209</a></div>
+              <div class="ygr-avatar" style="background-image: url(./assets/examples/maiden.jpg); background-size: 15.6rem; background-position: 10rem 7.4rem;"></div>
+              <div class "sg-note">Image created by
+                <a href="https://virtualman209.deviantart.com/" target="_blank">VirtualMan209</a>
+              </div>
+            </p>
+            <h2 class="ygr-h2" id="03-card">Card</h2>
+            <h3 class="ygr-h3 sg-item-heading">Basic Card</h3>
+            <p class="sg-p">Your Game Race uses card to structure page content by the content. They go full-width and -height and adds a
+              background to the element itself.</p>
+            <p>
+              <div style="display: flex; flex-direction: row; height: 20rem; width: 100%;">
+                <div style="margin-right: 1rem; flex-grow: 1;">
+                  <div class="ygr-card"></div>
+                </div>
+                <div style="margin-left: 1rem; flex-grow: 1;">
+                  <div class="ygr-card"></div>
+                </div>
+              </div>
+
             </p>
           </div>
+
         </div>
       </div>
     </div>
   </div>
+  </div>
+  </div>
   {% include_relative partials/footer.html %}
 </body>
+
 </html>

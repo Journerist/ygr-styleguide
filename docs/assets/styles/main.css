@@ -9,7 +9,8 @@
   --dark-gray-color: #293345;
   --light-gray-color: #79859a;
   --dark-orange-color: #fa5746;
-  --dark-blue-color: #040a24; }
+  --dark-blue-color: #040a24;
+  --light-blue-color: #181f3e; }
 
 :root {
   --regular-font-weight: 300;
@@ -40,7 +41,8 @@ ul {
   --dark-gray-color: #293345;
   --light-gray-color: #79859a;
   --dark-orange-color: #fa5746;
-  --dark-blue-color: #040a24; }
+  --dark-blue-color: #040a24;
+  --light-blue-color: #181f3e; }
 
 :root {
   --left-sidebar-width: 35rem;
@@ -127,7 +129,8 @@ ul {
   --dark-gray-color: #293345;
   --light-gray-color: #79859a;
   --dark-orange-color: #fa5746;
-  --dark-blue-color: #040a24; }
+  --dark-blue-color: #040a24;
+  --light-blue-color: #181f3e; }
 
 :root {
   --regular-font-weight: 300;
@@ -303,6 +306,11 @@ b {
   height: 4rem;
   width: 4rem; }
 
+.ygr-card {
+  background-color: var(--light-blue-color);
+  height: 100%;
+  width: 100%; }
+
 .ygr-content-with-sidebar {
   display: flex;
   flex-direction: row; }
@@ -395,3 +403,30 @@ b {
     font-weight: var(--bold-font-weight); }
   .ygr-current-user__image {
     margin: 0 1rem; }
+
+.ygr-metric-segment {
+  background-color: var(--light-blue-color);
+  display: inline-flex;
+  flex-direction: row;
+  padding: 2.8rem; }
+  .ygr-metric-segment__number {
+    background: linear-gradient(to right, var(--dark-purple-color), var(--light-purple-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 6rem;
+    font-weight: var(--bold-font-weight);
+    line-height: 6rem;
+    margin-bottom: -1.5rem;
+    margin-right: 2rem;
+    -webkit-text-fill-color: transparent; }
+  .ygr-metric-segment__description {
+    display: flex;
+    flex-direction: column; }
+  .ygr-metric-segment__description-headline {
+    color: var(--white-color);
+    font-size: var(--very-important-font-size);
+    font-weight: var(--bold-font-weight); }
+  .ygr-metric-segment__description-sub-headline {
+    color: var(--light-gray-color);
+    font-size: var(--important-font-size);
+    font-weight: var(--regular-font-weight); }

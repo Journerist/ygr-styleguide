@@ -1,0 +1,41 @@
+.ygr-metric-segment {
+  background-color: var(--light-blue-color);
+  display: inline-flex;
+  flex-direction: row;
+
+  // TODO use card mixin
+  padding: 2.8rem;
+
+  &__number {
+    background: linear-gradient(
+      to right,
+      var(--dark-purple-color),
+      var(--light-purple-color)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 6rem;
+    font-weight: var(--bold-font-weight);
+    line-height: 6rem;
+    margin-bottom: -1.5rem;
+    margin-right: 2rem;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description-headline {
+    color: var(--white-color);
+    font-size: var(--very-important-font-size);
+    font-weight: var(--bold-font-weight);
+  }
+
+  &__description-sub-headline {
+    color: var(--light-gray-color);
+    font-size: var(--important-font-size);
+    font-weight: var(--regular-font-weight);
+  }
+}

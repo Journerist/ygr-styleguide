@@ -303,6 +303,43 @@ title: The digital Styleguide of Your Game Race - Components
               </div>
             </div>
           </div>
+
+          <div class="sg-card sg-item-group">
+            <h2 class="ygr-h2" id="04-metric-segment">Metric segment</h2>
+            <h3 class="ygr-h3">Metric segment elements</h3>
+            <p class="sg-p">
+              <code>.ygr-metric-segment</code> (required):
+              <p class="sg-p">Basic element frame that is the foundation of the component. Additionally the component can be a .ygr-card to make it more independent.</p>
+            </p>
+            <p class="sg-p">
+              <code>.ygr-metric-segment__number</code> (required):
+              <p class="sg-p">Contains an important value to highlight.</p>
+            </p>
+
+            <p class="sg-p">
+              <code>.ygr-metric-segment__description</code> (required):
+              <p class="sg-p">Description of the highlighted number. The element itself only contains sub-elements.</p>
+            </p>
+            <p class="sg-p">
+              <code>.ygr-metric-segment__description-headline</code> (required):
+              <p class="sg-p">Name of the metric that is displayed.</p>
+            </p>
+            <p class="sg-p">
+              <code>.ygr-metric-segment__description-sub-headline</code> (required):
+              <p class="sg-p">Description of the element that is displayed. Either the metric is described or more details about related metrics can be shown.</p>
+            </p>
+
+            <h3 class="ygr-h3">Metric segment example</h3>
+            <div class="ygr-metric-segment">
+              <div class="ygr-metric-segment__number">
+                05
+              </div>
+              <div class="ygr-metric-segment__description">
+                <div class="ygr-metric-segment__description-headline">Races played</div>
+                <div class="ygr-metric-segment__description-sub-headline">87 Matches with 52.34% win-rate</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
