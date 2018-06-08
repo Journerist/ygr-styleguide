@@ -204,7 +204,7 @@ ul {
   .ygr-nav-top__logo {
     margin-left: 4rem; }
   .ygr-nav-top__motivation {
-    margin-left: 8rem; }
+    margin-left: var(--padding-content); }
 
 @font-face {
   font-family: "FivoSans";
@@ -381,7 +381,7 @@ a {
     margin-left: var(--left-sidebar-width);
     width: calc(100% - var(--left-sidebar-width)); }
   .ygr-content-with-sidebar__content-inner {
-    padding: var(--nav-top-height) var(--padding-content) var(--padding-content-bottom) var(--padding-content); }
+    padding: calc(var(--nav-top-height) + 5rem) var(--padding-content) var(--padding-content-bottom) var(--padding-content); }
 
 .ygr-table {
   display: flex;
@@ -453,7 +453,9 @@ a {
   text-align: center;
   width: calc(100% - var(--left-sidebar-width)); }
   .ygr-footer__text {
-    flex: 1; }
+    flex: 1;
+    margin-left: var(--padding-content);
+    text-align: left; }
   .ygr-footer__right-side {
     align-items: center;
     display: flex;

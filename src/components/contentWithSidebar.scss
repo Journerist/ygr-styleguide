@@ -15,6 +15,6 @@
   }
 
   &__content-inner {
-    padding: var(--nav-top-height) var(--padding-content) var(--padding-content-bottom) var(--padding-content);
+    padding: calc(var(--nav-top-height) + 5rem) var(--padding-content) var(--padding-content-bottom) var(--padding-content);
   }
 }
