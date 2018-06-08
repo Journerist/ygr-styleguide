@@ -1,7 +1,12 @@
 $body-background-color: var(--background-color);
 
+html {
+  height: 100%;
+}
+
 body {
   color: var(--light-gray-color);
+  height: 100%;
 }
 
 ul {

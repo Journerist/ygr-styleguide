@@ -1,9 +1,55 @@
 .ygr-footer {
   align-items: center;
-  background-color: #040a24;
+  background-color: var(--dark-blue-color);
   display: flex;
-  height: 9rem;
+  flex-direction: row;
+  height: var(--footer-height);
   justify-content: center;
+  margin-left: auto;
+  padding-right: var(--padding-content);
   text-align: center;
-  width: 100%;
+  width: calc(100% - var(--left-sidebar-width));
+
+  &__text {
+    flex: 1;
+  }
+
+  &__right-side {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__link-list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+  }
+
+  &__link {
+
+  }
+
+  &__link-separator {
+    margin: 0 1.7rem;
+
+    &::before {
+      content: '|';
+    }
+  }
+
+  &__right-text {
+    margin-right: 3rem;
+  }
+
+  .ygr-icon-list {
+    display: none;
+  }
+
+  @media screen and (min-width: 1516px) {
+    .ygr-icon-list {
+      display: flex;
+    }
+  }
 }

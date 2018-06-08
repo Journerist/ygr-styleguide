@@ -72,9 +72,13 @@ b {
   font-weight: var(--bold-font-weight);
 }
 
-.ygr-a {
-  color: var(--dark-purple-color);
+a {
+  color: var(--light-gray-color);
   text-decoration: none;
+
+  &:hover {
+    color: var(--white-color);
+  }
 }
 
 $headline-h1-size: 2.4rem;

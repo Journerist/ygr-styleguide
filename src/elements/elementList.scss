@@ -1,0 +1,28 @@
+.ygr-icon-list {
+  display: flex;
+  flex-direction: row;
+
+  &__icon {
+    align-items: center;
+    background-color: var(--blue-inactive-color);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin-left: 1rem;
+    width: 3rem;
+
+    path {
+      fill: var(--white-color);
+    }
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:hover {
+      background-color: var(--blue-active-color);
+    }
+  }
+}

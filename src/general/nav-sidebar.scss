@@ -43,6 +43,18 @@ $heading-height: 5.6rem;
     height: $heading-height;
     padding-left: 4rem;
     position: relative;
+
+    &:hover {
+      .ygr-nav-sidebar__icon {
+        & path {
+          fill: var(--white-color);
+        }
+      }
+
+      .ygr-nav-sidebar__heading-text {
+        color: var(--white-color);
+      }
+    }
   }
 
   &__Heading--active {
@@ -94,7 +106,24 @@ $heading-height: 5.6rem;
     font-size: var(--normal-font-size);
     font-weight: var(--regular-font-weight);
     height: $heading-height/2;
-    margin: 0.5rem 0 0.5rem 9rem;
+    padding: 0.5rem 0 0.5rem 9rem;
     position: relative;
+
+    &:hover {
+      color: var(--white-color);
+    }
   }
+}
+
+.ygr-nav-footer {
+  align-items: center;
+  background-color: var(--dark-blue-color);
+  bottom: 0;
+  display: flex;
+  height: 9rem;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }

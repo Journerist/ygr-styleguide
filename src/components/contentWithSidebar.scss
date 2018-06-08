@@ -1,6 +1,7 @@
 .ygr-content-with-sidebar {
   display: flex;
   flex-direction: row;
+  min-height: calc(100% - var(--footer-height));
 
   &__sidebar {
     height: 100%;
@@ -11,5 +12,9 @@
     background-color: $body-background-color;
     margin-left: var(--left-sidebar-width);
     width: calc(100% - var(--left-sidebar-width));
+  }
+
+  &__content-inner {
+    padding: var(--nav-top-height) var(--padding-content) var(--padding-content-bottom) var(--padding-content);
   }
 }
