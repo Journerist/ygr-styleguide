@@ -17,12 +17,13 @@
   --medium-font-weight: 400;
   --bold-font-weight: 600;
   --heavy-font-weight: 700;
-  --headline-font-size: 1.8rem;
+  --headline-font-size: 2.4rem;
   --very-important-font-size: 1.6rem;
   --more-important-font-size: 1.5rem;
   --important-font-size: 1.4rem;
   --normal-font-size: 1.3rem;
-  --hint-font-size: 1.2rem; }
+  --hint-font-size: 1.2rem;
+  --headline-line-height: 3.6rem; }
 
 body {
   color: var(--light-gray-color); }
@@ -137,12 +138,13 @@ ul {
   --medium-font-weight: 400;
   --bold-font-weight: 600;
   --heavy-font-weight: 700;
-  --headline-font-size: 1.8rem;
+  --headline-font-size: 2.4rem;
   --very-important-font-size: 1.6rem;
   --more-important-font-size: 1.5rem;
   --important-font-size: 1.4rem;
   --normal-font-size: 1.3rem;
-  --hint-font-size: 1.2rem; }
+  --hint-font-size: 1.2rem;
+  --headline-line-height: 3.6rem; }
 
 .ygr-nav-top {
   align-items: center;
@@ -223,30 +225,30 @@ b {
 
 .ygr-h1 {
   color: #fff;
-  font-size: 3.375rem;
-  font-weight: var(--medium-font-weight);
-  line-height: 3.375rem;
+  font-size: 2.4rem;
+  font-weight: var(--bold-font-weight);
+  line-height: 3.6rem;
   margin-bottom: 2.4rem; }
 
 .ygr-h2 {
   color: #fff;
-  font-size: 2.53125rem;
-  font-weight: var(--medium-font-weight);
-  line-height: 2.81247rem;
+  font-size: 1.8rem;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.99998rem;
   margin-bottom: 2.4rem; }
 
 .ygr-h3 {
   color: #fff;
-  font-size: 2.10938rem;
-  font-weight: var(--medium-font-weight);
-  line-height: 2.53125rem;
+  font-size: 1.5rem;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.8rem;
   margin-bottom: 2.4rem; }
 
 .ygr-h4 {
   color: #fff;
-  font-size: 1.6875rem;
-  font-weight: var(--medium-font-weight);
-  line-height: 2.10938rem;
+  font-size: 1.2rem;
+  font-weight: var(--bold-font-weight);
+  line-height: 1.5rem;
   margin-bottom: 2.4rem; }
 
 .ygr-single-action-btn {
