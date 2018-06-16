@@ -16,3 +16,7 @@ li {
 * {
   box-sizing: border-box;
 }
+
+.ygr-nav-sidebar_subMenu {
+  margin-left: -4rem;
+}

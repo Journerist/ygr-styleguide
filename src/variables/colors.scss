@@ -2,12 +2,14 @@
   --background-color: #050d2f;
   --nav-sidebar-background-color: rgba(7, 16, 53, 0.7);
   --nav-top-background-color: rgba(0, 0, 0, 0.3);
+  --nav-top-background-color-non-transparent: #030921;
   --dark-purple-color: #6859f2; // button gradient start
   --purple-color: #6577ff; // button text
   --light-purple-color: #4e8cff; // button gradient end
   --white-color: #fff; // button gradient end
   --dark-gray-color: #293345; // row separator in tables
   --light-gray-color: #79859a; // table sub-content
+  --light-gray-color-transparent: rgba(121, 133, 154, 0.2); // table sub-content
   --dark-orange-color: #fa5746; // categorize, mid important things like an premium race icon color, xp bar
   --dark-blue-color: #040a24; // used for the footer, its without transparency because the footer in the bottom is not absolute positioned and without transparency
   --light-blue-color: #181f3e; // used for cards, its similar to the sidebar menu background color because of the transparent background

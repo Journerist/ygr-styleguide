@@ -1,5 +1,6 @@
 @import "../variables/colors.scss";
 @import "../variables/sizes.scss";
+$padding-lr: 4rem;
 
 $nav-sidebar-bg-color: var(--nav-sidebar-background-color);
 $heading-height: 5.6rem;
@@ -11,6 +12,8 @@ $heading-height: 5.6rem;
   overflow-x: hidden;
   overflow-x: hidden;
   padding-bottom: 4.4rem;
+  padding-left: $padding-lr;
+  padding-right: $padding-lr;
   padding-top: 8rem;
   top: 0;
   user-select: none;
@@ -41,7 +44,11 @@ $heading-height: 5.6rem;
     font-size: var(--more-important-font-size);
     font-weight: var(--regular-font-weight);
     height: $heading-height;
-    padding-left: 4rem;
+    margin-left: -($padding-lr);
+    margin-right: -($padding-lr);
+    padding-left: $padding-lr;
+    padding-right: $padding-lr;
+
     position: relative;
 
     &:hover {
@@ -94,11 +101,9 @@ $heading-height: 5.6rem;
   }
 
   &__bumper {
-    border-bottom: 1px solid var(--light-gray-color);
+    border-bottom: 1px solid var(--light-gray-color-transparent);
     height: 2rem;
     margin-bottom: 2rem;
-    margin-left: 4rem;
-    width: 5rem;
   }
 
   &__heading-subtext {

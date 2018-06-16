@@ -1,23 +1,22 @@
 @import "../variables/colors.scss";
 @import "../variables/font.scss";
 
-$nav-top-bg-color: var(--nav-top-background-color);
-$nav-top-font-size: var(--more-important-font-size);
-
 .ygr-nav-top {
   align-items: center;
-  background-color: $nav-top-bg-color;
+  background-color: var(--more-important-font-size);
   display: flex;
   flex-direction: row;
   font-size: $nav-top-font-size;
   height: var(--nav-top-height);
   padding: 2rem 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: calc(100% - var(--left-sidebar-width));
   z-index: 90;
 
   &--sidebar {
+    background-color: var(--nav-top-background-color);
+    left: 0;
     width: var(--left-sidebar-width);
   }
 
