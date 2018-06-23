@@ -3,10 +3,10 @@
 
 .ygr-nav-top {
   align-items: center;
-  background-color: var(--more-important-font-size);
+  background-color: var(--nav-top-background-color-non-transparent);
   display: flex;
   flex-direction: row;
-  font-size: $nav-top-font-size;
+  font-size: var(--more-important-font-size);
   height: var(--nav-top-height);
   padding: 2rem 0;
   position: fixed;
