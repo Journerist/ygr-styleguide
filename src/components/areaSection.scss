@@ -1,23 +1,40 @@
+$area-section-padding: 1.5rem;
+
 .ygr-area-section {
   display: flex;
   flex-direction: row;
-  margin: -0.5rem;
 
   &__column {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     height: 100%;
-    padding: 0 0.5rem;
+    padding: 0 $area-section-padding;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
 
   &__row {
     display: flex;
     flex-grow: 1;
-    padding: 0.5rem 0;
+    padding: $area-section-padding 0;
 
     & > * {
       width: 100%;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &:first-child {
+      padding-top: 0;
     }
   }
 
