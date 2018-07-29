@@ -419,6 +419,10 @@ a {
     display: flex;
     flex-flow: row;
     padding: 2.6rem 0; }
+    .ygr-table__row:first-child {
+      padding-top: 0; }
+    .ygr-table__row:last-child {
+      padding-bottom: 0; }
   .ygr-table [class="ygr-table__row"]:last-of-type {
     border-bottom: none; }
   .ygr-table__category-image, .ygr-table__content-lead, .ygr-table__content, .ygr-table__actions {
