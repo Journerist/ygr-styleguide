@@ -60,7 +60,7 @@ $button-font-color-hover: var(--white-color);
     //border: 1px solid var(--dark-purple-color);
     color: $button-font-color-hover;
 
-    & svg {
+    & .ygr-single-action-btn__svg {
       & path {
         fill: $button-font-color-hover;
       }
@@ -75,7 +75,7 @@ $button-font-color-hover: var(--white-color);
     width: 2.6rem;
   }
 
-  & svg {
+  &__svg {
     height: 1.6rem;
     left: 0;
     position: absolute;

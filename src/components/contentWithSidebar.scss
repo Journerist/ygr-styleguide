@@ -15,6 +15,7 @@
   }
 
   &__content-inner {
+    min-height: 100vh;
     padding: calc(var(--nav-top-height) + 5rem) var(--padding-content) var(--padding-content-bottom) var(--padding-content);
   }
 }

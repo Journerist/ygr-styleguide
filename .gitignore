@@ -62,3 +62,6 @@ package-lock.json
 
 # not required webpack files
 dist/*.js
+
+# Mac
+.DS_Store
