@@ -372,6 +372,7 @@ a {
 
 .ygr-card {
   background-color: var(--light-blue-color);
+  padding: 2.5rem 3rem;
   height: 100%;
   width: 100%; }
 
@@ -529,6 +530,7 @@ a {
 
 .ygr-metric-segment {
   background-color: var(--light-blue-color);
+  padding: 2.5rem 3rem;
   display: inline-flex;
   flex-direction: row;
   padding: 2.8rem; }
