@@ -44,4 +44,23 @@
   &__motivation {
     margin-left: var(--padding-content);
   }
+
+  &__right-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: var(--padding-content);
+    top: 0.6rem;
+  }
+
+  &__svg {
+    height: 4rem;
+    margin: 1rem 0.5rem;
+    width: 4rem;
+
+    & path {
+      fill: white !important;
+    }
+  }
 }

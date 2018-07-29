@@ -218,6 +218,19 @@ ul {
     margin-left: 4rem; }
   .ygr-nav-top__motivation {
     margin-left: var(--padding-content); }
+  .ygr-nav-top__right-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: var(--padding-content);
+    top: 0.6rem; }
+  .ygr-nav-top__svg {
+    height: 4rem;
+    margin: 1rem 0.5rem;
+    width: 4rem; }
+    .ygr-nav-top__svg path {
+      fill: white !important; }
 
 @font-face {
   font-family: "FivoSans";
