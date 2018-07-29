@@ -205,11 +205,11 @@ ul {
     background-color: var(--nav-top-background-color);
     left: 0;
     width: var(--left-sidebar-width); }
-  .ygr-nav-top svg {
+  .ygr-nav-top .ygr-nav-top__svg {
     height: 4rem;
     margin-left: 3.5rem;
     width: 5rem; }
-    .ygr-nav-top svg path {
+    .ygr-nav-top .ygr-nav-top__svg path {
       fill: var(--dark-orange-color); }
   .ygr-nav-top__left-nav-part {
     height: 100%;

@@ -20,7 +20,7 @@
     width: var(--left-sidebar-width);
   }
 
-  & svg {
+  & .ygr-nav-top__svg {
     height: 4rem;
     margin-left: 3.5rem;
     width: 5rem; // its only 4 width, therefore there is already some rem to the right margin
