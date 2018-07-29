@@ -48,10 +48,10 @@
   &__right-section {
     align-items: center;
     display: flex;
+    height: 100%;
     justify-content: center;
     position: absolute;
     right: var(--padding-content);
-    top: 0.6rem;
   }
 
   &__svg {
