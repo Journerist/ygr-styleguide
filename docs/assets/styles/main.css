@@ -553,3 +553,8 @@ a {
     color: var(--light-gray-color);
     font-size: var(--important-font-size);
     font-weight: var(--regular-font-weight); }
+
+.ygr-section {
+  margin-bottom: 5rem; }
+  .ygr-section:last-child {
+    margin-bottom: 0; }
