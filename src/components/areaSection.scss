@@ -22,19 +22,20 @@ $area-section-padding: 1.5rem;
 
   &__row {
     display: flex;
-    flex-grow: 1;
-    padding: $area-section-padding 0;
+    flex: 1;
+    margin: $area-section-padding 0;
+    position: relative;
 
     & > * {
       width: 100%;
     }
 
     &:last-child {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
 
     &:first-child {
-      padding-top: 0;
+      margin-top: 0;
     }
   }
 
@@ -43,7 +44,38 @@ $area-section-padding: 1.5rem;
 
     .ygr-area-section__column,
     .ygr-area-section__row {
+      margin: 0;
       padding: 0;
     }
+  }
+
+  &__text {
+    left: 2.9rem;
+    position: absolute;
+    top: 4rem;
+    width: calc(100% - 5.8rem); //2 times 2.9
+
+    &--bottom {
+      bottom: 4rem;
+      top: unset;
+    }
+  }
+
+  &__topic {
+    color: var(--white-color);
+    font-size: var(--graphic-big-font-size);
+    font-weight: var(--bold-font-weight);
+    line-height: var(--graphic-big-line-height);
+
+    &--small {
+      font-size: var(--graphic-small-font-size);
+      line-height: var(--graphic-small-line-height);
+    }
+  }
+
+  &__description {
+    color: var(--white-color);
+    font-size: var(--important-font-size);
+    line-height: var(--graphic-small-line-height);
   }
 }

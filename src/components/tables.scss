@@ -33,6 +33,11 @@ $text-color: var(--white-color);
     flex-grow: 1;
   }
 
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   &__content-text {
     color: $text-color;
     font-size: var(--important-font-size);

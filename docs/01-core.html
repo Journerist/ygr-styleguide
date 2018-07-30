@@ -12,7 +12,7 @@ title: The digital Styleguide of Your Game Race - Core
 <body>
   <div class="ygr-content-with-sidebar">
     <div class="ygr-content-with-sidebar__sidebar">
-        {% include_relative partials/leftNav.html %}
+      {% include_relative partials/leftNav.html %}
     </div>
     <div class="ygr-content-with-sidebar__content">
       {% include_relative partials/topBar.html %}
@@ -22,15 +22,25 @@ title: The digital Styleguide of Your Game Race - Core
           <div class="">
             <h2 class="ygr-h2" id="01-typography">Typography</h2>
             <h3 class="ygr-h3 sg-item-heading">Font</h3>
-            <p class="sg-p">Your Game Race uses <a class="ygr-a" href="https://befonts.com/fivo-sans-font-family.html">Fivo Sans</a>, a beautiful free font. Feel free to donate some coffee money to its creator.</p>
+            <p class="sg-p">Your Game Race uses
+              <a class="ygr-a" href="https://befonts.com/fivo-sans-font-family.html">Fivo Sans</a>, a beautiful free font. Feel free to donate some coffee money to its creator.</p>
 
             <h3 class="ygr-h3 sg-item-heading">Font weights</h3>
-            <p class="sg-p">The default font weight for text is 300. Most of the default text styles will use this. The weight 400 is used for headlines and other more important text. The weight 600 is used for
-              emphasized text as well as table headers, form labels, and some other elements. In rare cases for some elements the heavy font weight 700 is used.</p>
-              <p class="sg-p" style="font-weight: 300;"><span>This is a regular text with font-weight 300.</span></p>
-              <p class="sg-p" style="font-weight: 400;"><span>This is a bolder text with font-weight 400.</span></p>
-              <p class="sg-p" style="font-weight: 600;"><span>This is a bold text with font-weight 600.</span></p>
-              <p class="sg-p" style="font-weight: 700;"><span>This is a heavy text with font-weight 700.</span></p>
+            <p class="sg-p">The default font weight for text is 300. Most of the default text styles will use this. The weight 400 is used
+              for headlines and other more important text. The weight 600 is used for emphasized text as well as table headers,
+              form labels, and some other elements. In rare cases for some elements the heavy font weight 700 is used.</p>
+            <p class="sg-p" style="font-weight: 300;">
+              <span>This is a regular text with font-weight 300.</span>
+            </p>
+            <p class="sg-p" style="font-weight: 400;">
+              <span>This is a bolder text with font-weight 400.</span>
+            </p>
+            <p class="sg-p" style="font-weight: 600;">
+              <span>This is a bold text with font-weight 600.</span>
+            </p>
+            <p class="sg-p" style="font-weight: 700;">
+              <span>This is a heavy text with font-weight 700.</span>
+            </p>
             <h3 class="ygr-h3 sg-item-heading">Headlines</h3>
             <p class="sg-p">
               <h1 class="ygr-h1">Headline H1 is about 48pt. Its line-height is equal.</h1>
@@ -61,7 +71,7 @@ title: The digital Styleguide of Your Game Race - Core
               <div class="sg-color-chip" style="border-top-color: var(--dark-purple-color); border-bottom-color: var(--dark-purple-color);">
                 <div class="sg-color-chip__name">Dark-purple</div>
                 <div class="sg-color-chip__color">#6859f2</div>
-                <div class="sg-color-chip__description">Usually used for links and  in button transitions.</div>
+                <div class="sg-color-chip__description">Usually used for links and in button transitions.</div>
               </div>
 
               <div class="sg-color-chip" style="border-top-color: var(--purple-color); border-bottom-color: var(--purple-color);">
@@ -99,9 +109,57 @@ title: The digital Styleguide of Your Game Race - Core
             </div>
 
           </div>
+
+          <div class="">
+            <h2 class="ygr-h2" id="03-responsive">Responsive</h2>
+            <h3 class="ygr-h3 sg-item-heading">Show elements for wide displays</h3>
+            <p class="ygr-p">
+              Responsive elements usually use the full available width. In some cases instead of showing line breaks for small width devices,
+              some elements can be hidden using
+              <code>.ygr-wide-only</code>
+            </p>
+            <div class="ygr-section">
+              <div class="ygr-area-section">
+                <div class="ygr-area-section__column">
+                  <div class="ygr-area-section__row">
+                    <div class="ygr-metric-segment">
+                      <div class="ygr-metric-segment__number">05</div>
+                      <div class="ygr-metric-segment__description">
+                        <div class="ygr-metric-segment__description-headline">Races played</div>
+                        <div class="ygr-metric-segment__description-sub-headline">87 Matches with 52.34% win-rate</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ygr-area-section__column">
+                  <div class="ygr-area-section__row">
+                    <div class="ygr-metric-segment">
+                      <div class="ygr-metric-segment__number">05</div>
+                      <div class="ygr-metric-segment__description">
+                        <div class="ygr-metric-segment__description-headline">Races played</div>
+                        <div class="ygr-metric-segment__description-sub-headline">87 Matches with 52.34% win-rate</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ygr-area-section__column ygr-wide-only">
+                  <div class="ygr-area-section__row">
+                    <div class="ygr-metric-segment">
+                      <div class="ygr-metric-segment__number">05</div>
+                      <div class="ygr-metric-segment__description">
+                        <div class="ygr-metric-segment__description-headline">For wide devices only</div>
+                        <div class="ygr-metric-segment__description-sub-headline">Here is some additional text</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </body>
+
 </html>

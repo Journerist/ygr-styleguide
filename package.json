@@ -26,6 +26,7 @@
     "test": "stylelint src/**/*.scss",
     "auto-fix": "stylelint src/**/*.scss --fix && stylelint docs/assets/styles/**/*.scss --fix",
     "build": "webpack && node ./node_modules/copy/bin/cli.js dist/*.css docs/assets/styles/",
-    "watch": "concurrently --kill-others \"webpack --watch\" \"cpx dist/*.css docs/assets/styles/ --watch\" \"cpx dist/icons/*.svg docs/assets/icons/ --watch\" \"cpx dist/assets/backgrounds/*.png docs/assets/backgrounds/ --watch\" \"cpx dist/assets/elements/*.png docs/assets/elements/ --watch\" \"cpx 'dist/assets/fonts/*.{svg,eot,ttf}' 'docs/assets/fonts/' --watch\" "
+    "watch": "concurrently --kill-others \"webpack --watch\" \"cpx dist/*.css docs/assets/styles/ --watch\" \"cpx dist/icons/*.svg docs/assets/icons/ --watch\" \"cpx dist/assets/backgrounds/*.png docs/assets/backgrounds/ --watch\" \"cpx dist/assets/elements/*.png docs/assets/elements/ --watch\" \"cpx 'dist/assets/fonts/*.{svg,eot,ttf}' 'docs/assets/fonts/' --watch\" ",
+    "sync-to-ygr": "cpx './dist/*.*' '../YourGameRace/ygr-frontend-user/node_modules/ygr-styleguide/dist' --watch --verbose"
   }
 }
