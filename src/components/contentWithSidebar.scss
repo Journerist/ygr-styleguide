@@ -13,6 +13,7 @@
     background: linear-gradient(rgba(5, 13, 37, 0.95), rgba(5, 13, 37, 0.95)), //$body-background-color
     /* bottom, image */
     url(../../assets/backgrounds/page-bg-wide.jpg);
+    background-size: contain;
     margin-left: var(--left-sidebar-width);
     width: calc(100% - var(--left-sidebar-width));
   }
