@@ -10,7 +10,7 @@
 
   &__content {
     /* top, transparent red, faked with gradient */
-    background: linear-gradient(rgba(5, 13, 37, 0.9), rgba(5, 13, 37, 0.9)), //$body-background-color
+    background: linear-gradient(rgba(5, 13, 37, 0.95), rgba(5, 13, 37, 0.95)), //$body-background-color
     /* bottom, image */
     url(../../assets/backgrounds/page-bg-wide.jpg);
     margin-left: var(--left-sidebar-width);
