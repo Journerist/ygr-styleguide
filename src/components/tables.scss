@@ -61,13 +61,13 @@ $text-color: var(--white-color);
   &__category-image {
     flex: unset;
     margin-right: 1.6rem;
-    width: 6rem;
+    width: 60px;
 
     &--regular::before {
       background-image: url(../../assets/icons/regular-race.png);
       content: ' ';
       display: block;
-      height: 5.8rem;
+      height: 58px;
       width: 100%;
     }
 
@@ -75,7 +75,7 @@ $text-color: var(--white-color);
       background-image: url(../../assets/icons/premium-race.png);
       content: ' ';
       display: block;
-      height: 5.8rem;
+      height: 58px;
       width: 100%;
     }
 
@@ -83,7 +83,7 @@ $text-color: var(--white-color);
       background-image: url(../../assets/icons/private-race.png);
       content: ' ';
       display: block;
-      height: 5.8rem;
+      height: 58px;
       width: 100%;
     }
   }

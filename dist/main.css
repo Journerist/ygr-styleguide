@@ -468,24 +468,24 @@ a {
   .ygr-table__category-image {
     flex: unset;
     margin-right: 1.6rem;
-    width: 6rem; }
+    width: 60px; }
     .ygr-table__category-image--regular::before {
       background-image: url(../../assets/icons/regular-race.png);
       content: ' ';
       display: block;
-      height: 5.8rem;
+      height: 58px;
       width: 100%; }
     .ygr-table__category-image--premium::before {
       background-image: url(../../assets/icons/premium-race.png);
       content: ' ';
       display: block;
-      height: 5.8rem;
+      height: 58px;
       width: 100%; }
     .ygr-table__category-image--private::before {
       background-image: url(../../assets/icons/private-race.png);
       content: ' ';
       display: block;
-      height: 5.8rem;
+      height: 58px;
       width: 100%; }
   .ygr-table__content-lead {
     flex: 2; }
