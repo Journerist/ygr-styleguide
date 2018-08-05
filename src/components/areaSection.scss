@@ -61,11 +61,21 @@ $area-section-padding: 1.5rem;
     }
   }
 
+  &__category {
+    color: var(--white-color);
+    font-size: var(--hint-font-size);
+    letter-spacing: 2.5px;
+    line-height: var(--hint-font-size);
+    margin-bottom: 1.7rem;
+    text-transform: uppercase;
+  }
+
   &__topic {
     color: var(--white-color);
     font-size: var(--graphic-big-font-size);
     font-weight: var(--bold-font-weight);
     line-height: var(--graphic-big-line-height);
+    margin-bottom: 1.2rem;
 
     &--small {
       font-size: var(--graphic-small-font-size);

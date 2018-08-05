@@ -103,6 +103,9 @@ $text-color: var(--white-color);
         color: var(--purple-color);
         font-size: var(--very-important-font-size);
         font-weight: var(--bold-font-weight);
+        height: 6rem;
+        line-height: var(--very-important-font-size);
+        padding-top: 2rem;
         position: relative;
       }
 
