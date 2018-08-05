@@ -423,7 +423,8 @@ a {
     position: fixed; }
   .ygr-content-with-sidebar__content {
     /* top, transparent red, faked with gradient */
-    background: linear-gradient(rgba(5, 13, 37, 0.9), rgba(5, 13, 37, 0.9)), url(../../assets/backgrounds/page-bg-wide.jpg);
+    background: linear-gradient(rgba(5, 13, 37, 0.95), rgba(5, 13, 37, 0.95)), url(../../assets/backgrounds/page-bg-wide.jpg);
+    background-size: cover;
     margin-left: var(--left-sidebar-width);
     width: calc(100% - var(--left-sidebar-width)); }
   .ygr-content-with-sidebar__content-inner {
@@ -494,6 +495,7 @@ a {
     .ygr-table--background .ygr-table__row--background {
       /* top, transparent red, faked with gradient */
       background: linear-gradient(var(--table-header-bg-color), var(--table-header-bg-color)), url(../../assets/backgrounds/table-head.jpg);
+      background-size: cover;
       color: var(--purple-color);
       font-size: var(--very-important-font-size);
       font-weight: var(--bold-font-weight);
