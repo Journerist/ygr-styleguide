@@ -96,11 +96,11 @@ $text-color: var(--white-color);
   &--background {
     & .ygr-table__row {
       &--background {
-         /* top, transparent red, faked with gradient */
-        background: linear-gradient(rgba(27, 36, 75, 0.9), rgba(27, 36, 75, 0.9)),
+        /* top, transparent red, faked with gradient */
+        background: linear-gradient(var(--table-header-bg-color), var(--table-header-bg-color)),
         /* bottom, image */
         url(../../assets/backgrounds/table-head.jpg);
-        color: #6577ff;
+        color: var(--purple-color);
         font-size: var(--very-important-font-size);
         font-weight: var(--bold-font-weight);
         position: relative;
@@ -111,11 +111,11 @@ $text-color: var(--white-color);
     }
 
     & .ygr-table__row:nth-child(even) {
-      background-color: #181f3e;
+      background-color: var(--light-blue-color);
     }
 
     & .ygr-table__row:nth-child(odd) {
-      background-color: #1d2547;
+      background-color: var(--darker-blue-color);
     }
   }
 }
