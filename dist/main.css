@@ -509,13 +509,13 @@ a {
     background-color: var(--darker-blue-color); }
 
 .ygr-area-section {
+  align-items: stretch;
   display: flex;
   flex-direction: row; }
   .ygr-area-section__column {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100%;
     padding: 0 1.5rem; }
     .ygr-area-section__column:last-child {
       padding-right: 0; }
