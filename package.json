@@ -1,6 +1,6 @@
 {
   "name": "ygr-styleguide",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Styleguide of Your Game Race, a competition platform for online games.",
   "main": "index.js",
   "repository": "https://github.com/Journerist/ygr-styleguide",
