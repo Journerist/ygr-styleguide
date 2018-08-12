@@ -1,6 +1,7 @@
 $area-section-padding: 1.5rem;
 
 .ygr-area-section {
+  align-items: stretch;
   display: flex;
   flex-direction: row;
 
@@ -8,7 +9,6 @@ $area-section-padding: 1.5rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100%;
     padding: 0 $area-section-padding;
 
     &:last-child {
