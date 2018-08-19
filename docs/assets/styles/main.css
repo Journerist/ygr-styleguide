@@ -646,6 +646,9 @@ a {
     color: var(--light-gray-color);
     font-size: var(--important-font-size);
     font-weight: var(--regular-font-weight); }
+  .ygr-metric-segment__image {
+    height: 5rem;
+    margin-right: 2rem; }
 
 .ygr-section {
   margin-bottom: 5rem; }

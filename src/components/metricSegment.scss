@@ -42,4 +42,9 @@
     font-size: var(--important-font-size);
     font-weight: var(--regular-font-weight);
   }
+
+  &__image {
+    height: 5rem;
+    margin-right: 2rem;
+  }
 }

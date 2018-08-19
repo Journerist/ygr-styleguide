@@ -1,6 +1,6 @@
 {
   "name": "ygr-styleguide",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "description": "Styleguide of Your Game Race, a competition platform for online games.",
   "main": "index.js",
   "repository": "https://github.com/Journerist/ygr-styleguide",
@@ -31,7 +31,8 @@
     "watch-backgrounds": "cpx \"dist/assets/backgrounds/*\" \"docs/assets/backgrounds/\" --watch",
     "watch-elements": "cpx \"dist/assets/elements/*.png\" \"docs/assets/elements/\" --watch",
     "watch-fonts": "cpx \"dist/assets/fonts/*.{svg,eot,ttf}\" \"docs/assets/fonts/\" --watch",
-    "watch": "concurrently --kill-others \"webpack --watch\" \"npm run watch-assets\" \"npm run watch-icons\" \"npm run watch-backgrounds\" \"npm run watch-elements\" \"npm run watch-fonts\" ",
+    "watch-assetIcons": "cpx \"dist/assets/icons/*\" \"docs/assets/icons/\" --watch",
+    "watch": "concurrently --kill-others \"webpack --watch\" \"npm run watch-assets\" \"npm run watch-icons\" \"npm run watch-backgrounds\" \"npm run watch-elements\" \"npm run watch-fonts\" \"npm run watch-assetIcons\" ",
     "sync-to-ygr": "cpx \"./dist/**/*\" \"../YourGameRace/ygr-frontend-user/node_modules/ygr-styleguide/dist\" --watch --verbose"
   }
 }
