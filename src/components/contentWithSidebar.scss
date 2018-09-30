@@ -22,4 +22,20 @@
     min-height: 100vh;
     padding: calc(var(--nav-top-height) + 5rem) var(--padding-content) var(--padding-content-bottom) var(--padding-content);
   }
+
+  &--hide-nav {
+    --left-sidebar-width: 0;
+
+    & .ygr-content-with-sidebar__content {
+      width: 100%;
+    }
+
+    & .ygr-nav-sidebar {
+      padding: 0;
+    }
+
+    & .ygr-nav-top {
+      width: 100%;
+    }
+  }
 }

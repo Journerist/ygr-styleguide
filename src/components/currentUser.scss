@@ -9,7 +9,8 @@
     font-weight: var(--regular-font-weight);
   }
 
-  &__name {
+  &__name,
+  &__name > a {
     color: var(--white-color);
     font-size: var(--more-important-font-size);
     font-weight: var(--bold-font-weight);

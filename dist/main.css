@@ -70,7 +70,7 @@ ul {
   --blue-active-color: #3b5999; }
 
 :root {
-  --left-sidebar-width: 35rem;
+  --left-sidebar-width: 30rem;
   --nav-top-height: 8rem;
   --padding-content: 8rem;
   --padding-content-bottom: 10rem;
@@ -371,6 +371,10 @@ a {
     margin-top: -0.5rem;
     position: relative;
     width: 2.6rem; }
+    .ygr-single-action-btn__icon > .fa {
+      left: 0;
+      position: absolute;
+      top: 0.2rem; }
   .ygr-single-action-btn__svg {
     height: 1.6rem;
     left: 0;
@@ -430,6 +434,14 @@ a {
   .ygr-content-with-sidebar__content-inner {
     min-height: 100vh;
     padding: calc(var(--nav-top-height) + 5rem) var(--padding-content) var(--padding-content-bottom) var(--padding-content); }
+  .ygr-content-with-sidebar--hide-nav {
+    --left-sidebar-width: 0; }
+    .ygr-content-with-sidebar--hide-nav .ygr-content-with-sidebar__content {
+      width: 100%; }
+    .ygr-content-with-sidebar--hide-nav .ygr-nav-sidebar {
+      padding: 0; }
+    .ygr-content-with-sidebar--hide-nav .ygr-nav-top {
+      width: 100%; }
 
 .ygr-table {
   display: flex;
@@ -558,14 +570,20 @@ a {
     font-size: var(--graphic-big-font-size);
     font-weight: var(--bold-font-weight);
     line-height: var(--graphic-big-line-height);
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+    max-height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
     .ygr-area-section__topic--small {
       font-size: var(--graphic-small-font-size);
       line-height: var(--graphic-small-line-height); }
   .ygr-area-section__description {
     color: var(--white-color);
     font-size: var(--important-font-size);
-    line-height: var(--graphic-small-line-height); }
+    line-height: var(--graphic-small-line-height);
+    max-height: 8rem;
+    overflow: hidden; }
 
 .ygr-footer {
   align-items: flex-start;
@@ -612,7 +630,8 @@ a {
     color: var(--light-gray-color);
     font-size: var(--important-font-size);
     font-weight: var(--regular-font-weight); }
-  .ygr-current-user__name {
+  .ygr-current-user__name,
+  .ygr-current-user__name > a {
     color: var(--white-color);
     font-size: var(--more-important-font-size);
     font-weight: var(--bold-font-weight); }
@@ -624,7 +643,8 @@ a {
   padding: 2.5rem 3rem;
   display: inline-flex;
   flex-direction: row;
-  padding: 2.8rem; }
+  padding: 2.8rem;
+  width: 100%; }
   .ygr-metric-segment__number {
     background: linear-gradient(to right, var(--dark-purple-color), var(--light-purple-color));
     -webkit-background-clip: text;

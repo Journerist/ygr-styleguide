@@ -73,6 +73,12 @@ $button-font-color-hover: var(--white-color);
     margin-top: -0.5rem;
     position: relative;
     width: 2.6rem;
+
+    & > .fa {
+      left: 0;
+      position: absolute;
+      top: 0.2rem;
+    }
   }
 
   &__svg {

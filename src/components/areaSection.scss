@@ -76,6 +76,10 @@ $area-section-padding: 1.5rem;
     font-weight: var(--bold-font-weight);
     line-height: var(--graphic-big-line-height);
     margin-bottom: 1.2rem;
+    max-height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
     &--small {
       font-size: var(--graphic-small-font-size);
@@ -87,5 +91,7 @@ $area-section-padding: 1.5rem;
     color: var(--white-color);
     font-size: var(--important-font-size);
     line-height: var(--graphic-small-line-height);
+    max-height: 8rem;
+    overflow: hidden;
   }
 }
