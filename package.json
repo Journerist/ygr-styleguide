@@ -15,7 +15,7 @@
     "file-loader": "^1.1.11",
     "node-sass": "^4.7.2",
     "sass-loader": "^7.0.1",
-    "stylelint": "^9.1.1",
+    "stylelint": "^13.4.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1",
     "url-loader": "^1.0.1",
